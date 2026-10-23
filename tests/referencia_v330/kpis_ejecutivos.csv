@@ -1,0 +1,10 @@
+metrica,valor
+Total órdenes,119557485.0
+Precio promedio,332.24
+N observaciones,456548.0
+N centros únicos,77.0
+N comidas únicas,51.0
+Semanas cubiertas,145.0
+Elasticidad OLS (Fase 3),-0.759
+Elasticidad Panel FE (Fase 3b),-1.5985
+Elasticidad 2SLS con controles (Fase 3c),-0.8414

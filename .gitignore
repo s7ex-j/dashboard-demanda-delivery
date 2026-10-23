@@ -1,0 +1,21 @@
+# Datos de Kaggle: no se redistribuyen
+data/raw/*.csv
+data/raw/*.zip
+
+# Salidas reconstruibles
+salida/
+exportes/estrella/
+ci_exportes/
+*.duckdb
+*.duckdb.wal
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Power BI: archivos temporales y caché local de PBIP
+dashboard/powerbi/**/.pbi/localSettings.json
+dashboard/powerbi/**/.pbi/cache.abf
+~$*.pbix

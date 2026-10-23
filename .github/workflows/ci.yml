@@ -1,0 +1,30 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: El fixture versionado coincide con su generador
+        if: runner.os == 'Linux'
+        run: |
+          python tests/fixtures/generar_fixture.py
+          git diff --exit-code tests/fixtures/raw
+      - name: Tests (calidad, lógica de marts; la conciliación se omite sin datos reales)
+        run: python -m pytest -v -rs
+      - name: Pipeline completo sobre el fixture
+        run: python -m pipeline.build --raw tests/fixtures/raw --db ":memory:" --exportes ci_exportes

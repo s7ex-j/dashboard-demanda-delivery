@@ -1,0 +1,5 @@
+center_id,city_code,region_code,center_type,op_area
+10,590,56,TYPE_A,4.0
+20,590,56,TYPE_B,3.5
+30,526,34,TYPE_C,2.0
+40,647,77,TYPE_A,6.3

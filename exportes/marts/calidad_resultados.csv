@@ -1,0 +1,18 @@
+regla,descripcion,filas_con_error
+pk_hechos_unica,Una sola fila por semana × centro × comida,0
+id_unico,El id original no se repite,0
+pk_dim_comida_unica,meal_id no se repite en dim_comida,0
+pk_dim_centro_unica,center_id no se repite en dim_centro,0
+fk_comida,Toda comida de los hechos existe en dim_comida,0
+fk_centro,Todo centro de los hechos existe en dim_centro,0
+fk_semana,Toda semana de los hechos existe en dim_semana,0
+hechos_sin_nulos,Ninguna columna clave o medida es nula,0
+dimensiones_sin_nulos,Atributos de comida y centro completos,0
+semanas_contiguas,Todas las semanas entre la mínima y la máxima tienen datos,0
+pedidos_positivos,num_orders > 0,0
+precios_positivos,checkout_price y base_price > 0,0
+banderas_binarias,Las banderas de promoción solo valen 0 o 1,0
+area_positiva,op_area > 0,0
+conserva_filas,Los hechos tienen las mismas filas que el CSV original,0
+conserva_pedidos,La suma de pedidos no cambia entre el CSV y los hechos,0
+marts_cuadran_kpis,Los marts suman lo mismo que los KPI,0
