@@ -20,21 +20,21 @@ Genera `exportes/estrella/*.parquet` (modelo) y `exportes/marts/*.csv` (marts y 
 *Obtener datos → Parquet* para cada archivo de `exportes/estrella/`:
 `fct_demanda`, `dim_comida`, `dim_centro`, `dim_semana`.
 
-*Obtener datos → Texto/CSV* (origen: **Unicode UTF-8**, delimitador coma) para estos marts de
-`exportes/marts/`:
+Los marts también se cargan en **Parquet**, desde `exportes/marts_parquet/` (*Obtener datos → Parquet*).
+No uses los CSV de `exportes/marts/` en Power BI: son para Looker Studio, y con la configuración
+regional en español Power BI lee `0.1996` como `1996`.
 
 | Mart | Para qué |
 |---|---|
-| `mart_comidas_abc` | Página Categorías: clasificación ABC |
-| `mart_promociones_indice` | Página Categorías: índice controlado por par centro × comida |
-| `mart_cohortes` | Página Cohortes |
-| `mart_bandas_precio` | Página Precio |
-| `mart_elasticidad_rcs`, `mart_elasticidad_categoria` | Página Precio (resultados del estudio) |
+| `mart_comidas_abc` | Página Comparar: clasificación ABC |
+| `mart_promociones_indice` | Página Diagnosticar: índice controlado por par centro × comida |
+| `mart_cohortes` | Página Diagnosticar: cohortes |
+| `mart_bandas_precio` | Página Diagnosticar: deciles de precio |
+| `mart_elasticidad_rcs`, `mart_elasticidad_categoria` | Página Diagnosticar (resultados del estudio) |
 | `mart_kpis`, `calidad_resultados` | Página Validación |
 
-> **Configuración regional.** Los CSV usan punto decimal. Si Power BI lee `332.24` como
-> `33224`, en Power Query cambia el tipo con *Cambiar tipo → Usar configuración regional →
-> Inglés (Estados Unidos)*. Los Parquet no tienen este problema.
+El detalle de cada visual (campos, agregación, posición y formato) está en
+[`fondos/POSICIONES.md`](fondos/POSICIONES.md).
 
 ## 3. Relaciones
 
@@ -78,7 +78,7 @@ Ajustes recomendados:
 
 ## 5. Páginas
 
-Tema: *Vista → Temas → Buscar temas* → [`tema_demanda.json`](tema_demanda.json).
+Tema: *Vista → Temas → Buscar temas* → [`tema_charcoal_demanda.json`](tema_charcoal_demanda.json). Fondos de página y posiciones de cada visual: [`fondos/GUIA_FONDOS.md`](fondos/GUIA_FONDOS.md).
 
 **1. Resumen ejecutivo**
 - Tarjetas: `Pedidos`, `Ingreso estimado`, `Precio promedio ponderado`, `Centros activos`,

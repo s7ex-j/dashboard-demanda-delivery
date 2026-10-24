@@ -7,8 +7,9 @@ Pasos:
   3. Exporta:
        exportes/estrella/*.parquet  -> modelo estrella para Power BI (no se versiona:
                                        contiene datos a nivel de fila del dataset)
-       exportes/marts/*.csv         -> tablas agregadas para Looker Studio y Power BI,
-                                       más el resultado de las reglas de calidad
+       exportes/marts/*.csv         -> marts y reglas de calidad para Looker Studio
+       exportes/marts_parquet/*.parquet -> los mismos marts para Power BI (sin problemas
+                                       de coma o punto decimal)
 
 Uso (desde la raíz del repositorio, también en cmd de Windows):
     python -m pipeline.build
@@ -89,16 +90,32 @@ def verificar_calidad(con: duckdb.DuckDBPyConnection) -> list[tuple]:
     return filas
 
 
+def _select_portable(con: duckdb.DuckDBPyConnection, tabla: str) -> str:
+    """SELECT que convierte HUGEINT (resultado de SUM sobre enteros) a BIGINT.
+
+    Power BI y otros lectores de Parquet no siempre aceptan enteros de 128 bits.
+    """
+    cols = con.execute(f"DESCRIBE SELECT * FROM {tabla}").fetchall()
+    partes = [f'CAST("{c[0]}" AS BIGINT) AS "{c[0]}"' if c[1] == "HUGEINT" else f'"{c[0]}"'
+              for c in cols]
+    return f"SELECT {', '.join(partes)} FROM {tabla}"
+
+
 def exportar(con: duckdb.DuckDBPyConnection, destino: Path) -> None:
-    (destino / "estrella").mkdir(parents=True, exist_ok=True)
-    (destino / "marts").mkdir(parents=True, exist_ok=True)
+    for sub in ("estrella", "marts", "marts_parquet"):
+        (destino / sub).mkdir(parents=True, exist_ok=True)
     for t in TABLAS_ESTRELLA:
         p = destino / "estrella" / f"{t}.parquet"
-        con.execute(f"COPY {t} TO '{_ruta_sql(p)}' (FORMAT parquet)")
+        con.execute(f"COPY ({_select_portable(con, t)}) TO '{_ruta_sql(p)}' (FORMAT parquet)")
     for m in MARTS:
+        sel = _select_portable(con, m)
+        # CSV con punto decimal y UTF-8: lo que esperan Google Sheets y Looker Studio.
         p = destino / "marts" / f"{m}.csv"
-        # Punto decimal y UTF-8: lo que esperan Google Sheets y Looker Studio.
-        con.execute(f"COPY (SELECT * FROM {m}) TO '{_ruta_sql(p)}' (HEADER, DELIMITER ',')")
+        con.execute(f"COPY ({sel}) TO '{_ruta_sql(p)}' (HEADER, DELIMITER ',')")
+        # Parquet para Power BI: los tipos viajan en el archivo y no depende de la
+        # configuración regional (coma o punto decimal) del equipo.
+        p = destino / "marts_parquet" / f"{m}.parquet"
+        con.execute(f"COPY ({sel}) TO '{_ruta_sql(p)}' (FORMAT parquet)")
     print(f"  Exportado en {destino.relative_to(RAIZ) if destino.is_relative_to(RAIZ) else destino}")
 
 

@@ -5,6 +5,7 @@ data/raw/*.zip
 # Salidas reconstruibles
 salida/
 exportes/estrella/
+exportes/marts_parquet/
 ci_exportes/
 *.duckdb
 *.duckdb.wal
