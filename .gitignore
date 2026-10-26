@@ -20,3 +20,5 @@ venv/
 dashboard/powerbi/**/.pbi/localSettings.json
 dashboard/powerbi/**/.pbi/cache.abf
 ~$*.pbix
+dashboard/powerbi_backup/
+dashboard/powerbi/*.pbix

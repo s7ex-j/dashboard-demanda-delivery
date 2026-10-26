@@ -1,0 +1,47 @@
+table mart_elasticidad_rcs
+	lineageTag: a9c26ba3-769f-4df7-a1a6-ecb43afcee1d
+
+	column precio
+		dataType: double
+		formatString: 0
+		lineageTag: 96016d40-b96d-4e2c-8100-94e1124cab27
+		summarizeBy: sum
+		sourceColumn: precio
+
+		annotation SummarizationSetBy = Automatic
+
+	column elasticidad_rcs
+		dataType: double
+		formatString: 0
+		lineageTag: aa4ef5b7-1339-4a66-99d5-a9edf5246ac6
+		summarizeBy: sum
+		sourceColumn: elasticidad_rcs
+
+		annotation SummarizationSetBy = Automatic
+
+	column especificacion
+		dataType: string
+		lineageTag: f1bf6b6c-97d6-4ed2-a460-ec8e54afb583
+		summarizeBy: none
+		sourceColumn: especificacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column nota
+		dataType: string
+		lineageTag: 05380e30-a3ac-44e1-8977-38b917f1bb75
+		summarizeBy: none
+		sourceColumn: nota
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_elasticidad_rcs = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_elasticidad_rcs.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,38 @@
+table dim_comida
+	lineageTag: 545732e2-d938-4fbb-abf6-fdffaffec0d6
+
+	column meal_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 4c5591a8-a7a6-4bc6-ba6d-d1577c59a70b
+		summarizeBy: none
+		sourceColumn: meal_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: 3736459d-bfc8-4ac1-b59a-00f8348f174e
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column cocina
+		dataType: string
+		lineageTag: 10df5dd2-0df9-44e4-a9a4-d62d8f5732af
+		summarizeBy: none
+		sourceColumn: cocina
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_comida = m
+		mode: import
+		source =
+				let
+				    Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\estrella\dim_comida.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

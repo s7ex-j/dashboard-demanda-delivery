@@ -1,0 +1,161 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "459ba24eac0528e12e05",
+  "position": {
+    "x": 52.5,
+    "y": 175,
+    "z": 0,
+    "height": 837.5,
+    "width": 547.5,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "119,6 millones de pedidos en 145 semanas, 77 centros y 51 comidas: unos 824 mil por semana.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La semana con más pedidos es la 48 (1,30 millones).",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "El promedio semanal del segundo año relativo es 5,6 % mayor que el del primero.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Beverages",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": " concentra el 33,9 % de los pedidos. Con Rice Bowl y Sandwich, las tres primeras categorías suman el 66,1 %.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Rice Bowl tiene más pedidos por fila (625) que Beverages (317): aparece en menos combinaciones semana × centro, pero cada una vende más.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Los centros TYPE_A son 43 de 77 y generan el 57,7 % de los pedidos. Por fila, los TYPE_B venden más (319 frente a 262 de TYPE_A y 207 de TYPE_C).",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Una fila con email y portada a la vez tiene 3,9 veces los pedidos de una fila sin promoción (comparación cruda).",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Comparando cada comida con ella misma en el mismo centro, con email y portada se venden entre 2,08 y 5,64 veces los pedidos sin promoción, según la categoría.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "22 de las 51 comidas (clase A) concentran el 80% de los pedidos.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "La elasticidad promedio del modelo principal es −0,76 (IC 95 % [−0,843; −0,675]), pero no es constante: cambia con el nivel de precio.",
+                    "textStyle": {
+                      "fontSize": "16pt",
+                      "color": "#000000"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -259,7 +259,7 @@ def _campo(c):
     return f"Medida **{nombre}** (tabla `_Medidas`)" if tipo == "M" else f"Columna `{nombre}`"
 
 
-def _bloque(titulo, tipo, x, y, w, h, pozos, ajustes):
+def _bloque(titulo, tipo, x, y, w, h, pozos, ajustes, comprueba=()):
     l = [f"#### {titulo}", "",
          f"**Visual:** {tipo}  ·  **X** {x} · **Y** {y} · **Ancho** {w} · **Alto** {h}", ""]
     if pozos:
@@ -271,11 +271,13 @@ def _bloque(titulo, tipo, x, y, w, h, pozos, ajustes):
         l.append("")
     for a in ajustes:
         l.append(f"- {a}")
+    if comprueba:
+        l += ["", "**Comprueba:** " + " · ".join(comprueba)]
     return l + [""]
 
 
 def tabla_posiciones():
-    from detalle_visuales import MARTS_POR_PAGINA, MEDIDAS, NO_RESUMIR, V
+    from detalle_visuales import COMPRUEBA, MARTS_POR_PAGINA, MEDIDAS, NO_RESUMIR, PREPARACION, V
 
     dax = _medidas_dax()
     L = [
@@ -283,6 +285,12 @@ def tabla_posiciones():
         "",
         "Página **1920 × 1080**. Posición y tamaño se escriben en *Formato del visual → General → "
         "Propiedades* (Tamaño: Alto, Ancho · Posición: Horizontal = X, Vertical = Y).",
+        "",
+        "## Antes de seguir (una sola vez)",
+        "",
+    ]
+    L += [f"{i}. {t}" for i, t in enumerate(PREPARACION, 1)]
+    L += [
         "",
         "## Reglas que evitan los errores más comunes",
         "",
@@ -336,10 +344,12 @@ def tabla_posiciones():
             d = V[clave]
             if "sub" in d:
                 for titulo, tipo, sx, sy, sw, sh, pozos, ajustes in d["sub"]:
-                    L += _bloque(f"{p[5]} · {titulo}", tipo, sx, sy, sw, sh, pozos, ajustes)
+                    L += _bloque(f"{p[5]} · {titulo}", tipo, sx, sy, sw, sh, pozos, ajustes,
+                                 ["Mismos tres números en las dos tablas"] if titulo == "Tabla DAX" else ())
                 continue
             titulo = p[5] or p[7].replace("Tarjeta: ", "Tarjeta · ")
-            L += _bloque(titulo, d["tipo"], x, y, w, h, d["pozos"], d["ajustes"])
+            L += _bloque(titulo, d["tipo"], x, y, w, h, d["pozos"], d["ajustes"],
+                         COMPRUEBA.get(clave, ()))
 
     (DESTINO / "POSICIONES.md").write_text("\n".join(L), encoding="utf-8")
 

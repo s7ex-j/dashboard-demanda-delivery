@@ -1,0 +1,84 @@
+table mart_bandas_precio
+	lineageTag: fa314c00-5178-449a-a3b8-0a77423482b2
+
+	column categoria
+		dataType: string
+		lineageTag: 79702cca-ee6d-4a12-aaf0-c08f8b8084bf
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column decil_precio
+		dataType: int64
+		formatString: 0
+		lineageTag: 16739383-a3aa-43fa-abd9-e3eba850601a
+		summarizeBy: sum
+		sourceColumn: decil_precio
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_filas
+		dataType: int64
+		formatString: 0
+		lineageTag: dd6c5f66-c317-4e50-b521-e51734a26b68
+		summarizeBy: sum
+		sourceColumn: n_filas
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_min
+		dataType: double
+		formatString: 0
+		lineageTag: cb880f97-d6fb-40ac-974e-8f56a7ff3742
+		summarizeBy: sum
+		sourceColumn: precio_min
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_max
+		dataType: double
+		formatString: 0
+		lineageTag: 7aa29fbd-9dbc-46f7-8883-fd63451e80dc
+		summarizeBy: sum
+		sourceColumn: precio_max
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_promedio
+		dataType: double
+		formatString: 0
+		lineageTag: ce233825-3d56-4f4e-84e6-84bdd0f07fd2
+		summarizeBy: sum
+		sourceColumn: precio_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos_promedio_fila
+		dataType: double
+		formatString: 0
+		lineageTag: 5f23a8cf-43fe-4624-95f2-8e73464465c6
+		summarizeBy: sum
+		sourceColumn: pedidos_promedio_fila
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos_mediana_fila
+		dataType: double
+		formatString: 0
+		lineageTag: c99a973c-9ce9-441b-8627-6b7692d58ae8
+		summarizeBy: sum
+		sourceColumn: pedidos_mediana_fila
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_bandas_precio = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_bandas_precio.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

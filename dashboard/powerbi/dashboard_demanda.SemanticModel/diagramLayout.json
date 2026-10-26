@@ -1,0 +1,191 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1704.5201276265698,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "fct_demanda",
+          "nodeLineageTag": "0c212f8c-641e-4e96-9f56-66c9dd7a28d6",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 74
+          },
+          "nodeIndex": "dim_comida",
+          "nodeLineageTag": "545732e2-d938-4fbb-abf6-fdffaffec0d6",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 50
+          },
+          "nodeIndex": "dim_centro",
+          "nodeLineageTag": "11b0ae6a-ecfc-4a02-bd13-722b30cbf366",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 38
+          },
+          "nodeIndex": "dim_semana",
+          "nodeLineageTag": "08051307-c352-46a2-ab72-58f04fe34cc7",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 2
+          },
+          "nodeIndex": "mart_kpis",
+          "nodeLineageTag": "5793b7b3-7458-4a82-93db-24e642d283ad",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 74
+          },
+          "nodeIndex": "calidad_resultados",
+          "nodeLineageTag": "2625e9ef-b92f-4a65-86a2-3690730d202e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 98
+          },
+          "nodeIndex": "_Medidas",
+          "nodeLineageTag": "e6a40fa5-810e-4bea-bf97-33b7293d7455",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 0
+          },
+          "nodeIndex": "mart_comidas_abc",
+          "nodeLineageTag": "f8a28c1d-ccef-4fbd-89eb-dd0398571d52",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 26
+          },
+          "nodeIndex": "mart_promociones_indice",
+          "nodeLineageTag": "06b2a065-e1f5-460e-8514-ef540e214fd4",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 50
+          },
+          "nodeIndex": "mart_cohortes",
+          "nodeLineageTag": "df395282-ed9a-43c4-bcba-1edc940962c4",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2840,
+            "y": 14
+          },
+          "nodeIndex": "mart_bandas_precio",
+          "nodeLineageTag": "fa314c00-5178-449a-a3b8-0a77423482b2",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 62
+          },
+          "nodeIndex": "mart_elasticidad_rcs",
+          "nodeLineageTag": "a9c26ba3-769f-4df7-a1a6-ecb43afcee1d",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 62
+          },
+          "nodeIndex": "mart_elasticidad_categoria",
+          "nodeLineageTag": "49cb5802-49dc-42d1-a85b-ac4bea4c05ce",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 79.553182037699926,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

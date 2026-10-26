@@ -1,0 +1,98 @@
+table mart_kpis
+	lineageTag: 5793b7b3-7458-4a82-93db-24e642d283ad
+
+	column n_filas
+		dataType: double
+		formatString: #,0
+		lineageTag: cfbdd6a9-21cc-4441-90c3-b41cae24aa48
+		summarizeBy: sum
+		sourceColumn: n_filas
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos_totales
+		dataType: double
+		formatString: #,0
+		lineageTag: 016d403a-9af1-4e94-b32d-2d8e1bc6c802
+		summarizeBy: sum
+		sourceColumn: pedidos_totales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	column ingreso_estimado
+		dataType: double
+		formatString: 0
+		lineageTag: a55734d2-61ba-44af-80b2-4e6c05c4cb12
+		summarizeBy: sum
+		sourceColumn: ingreso_estimado
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_promedio_fila
+		dataType: double
+		formatString: 0.00
+		lineageTag: 64406772-3ea7-455b-8176-0b14cb850c58
+		summarizeBy: sum
+		sourceColumn: precio_promedio_fila
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_promedio_ponderado
+		dataType: double
+		formatString: 0
+		lineageTag: b0356ea6-49b1-4463-a31f-240c48d6bd76
+		summarizeBy: sum
+		sourceColumn: precio_promedio_ponderado
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_centros
+		dataType: double
+		formatString: 0
+		lineageTag: 637ae231-60fd-4979-b843-cb7373b453c9
+		summarizeBy: sum
+		sourceColumn: n_centros
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_comidas
+		dataType: double
+		formatString: 0
+		lineageTag: deba9cce-9449-4b7b-b25c-34606d4fc6d0
+		summarizeBy: sum
+		sourceColumn: n_comidas
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_semanas
+		dataType: double
+		formatString: 0
+		lineageTag: 04f37ff3-9a73-491b-90a4-7fedb30b4478
+		summarizeBy: sum
+		sourceColumn: n_semanas
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos_por_semana
+		dataType: double
+		formatString: 0
+		lineageTag: 5a2b5ba2-2cd0-4bc2-97a3-aa9830dea72a
+		summarizeBy: sum
+		sourceColumn: pedidos_por_semana
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_kpis = m
+		mode: import
+		source =
+				let
+				  Origen = Csv.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts\mart_kpis.csv"), [Delimiter = ",", Columns = 9, QuoteStyle = QuoteStyle.None]),
+				  #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"n_filas", type number}, {"pedidos_totales", type number}, {"ingreso_estimado", type number}, {"precio_promedio_fila", type number}, {"precio_promedio_ponderado", type number}, {"n_centros", type number}, {"n_comidas", type number}, {"n_semanas", type number}, {"pedidos_por_semana", type number}}, "en-US")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_ResultType = Table
+

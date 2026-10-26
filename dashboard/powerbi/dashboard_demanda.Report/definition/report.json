@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU10",
+      "reportVersionAtImport": {
+        "visual": "2.14.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    },
+    "customTheme": {
+      "name": "Marketing_Gray_&_Charcoal___De4874215944954795.json",
+      "reportVersionAtImport": {
+        "visual": "2.14.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "RegisteredResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU10",
+          "path": "BaseThemes/Fluent2-CY26SU10.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "fondo_1_describir7601029358355377.png",
+          "path": "fondo_1_describir7601029358355377.png",
+          "type": "Image"
+        },
+        {
+          "name": "fondo_2_comparar727641427451315.png",
+          "path": "fondo_2_comparar727641427451315.png",
+          "type": "Image"
+        },
+        {
+          "name": "fondo_3_diagnosticar772520721632032.png",
+          "path": "fondo_3_diagnosticar772520721632032.png",
+          "type": "Image"
+        },
+        {
+          "name": "fondo_4_hallazgos7334229653663855.png",
+          "path": "fondo_4_hallazgos7334229653663855.png",
+          "type": "Image"
+        },
+        {
+          "name": "fondo_5_validacion3436357520952513.png",
+          "path": "fondo_5_validacion3436357520952513.png",
+          "type": "Image"
+        },
+        {
+          "name": "Marketing_Gray_&_Charcoal___De4874215944954795.json",
+          "path": "Marketing_Gray_&_Charcoal___De4874215944954795.json",
+          "type": "CustomTheme"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

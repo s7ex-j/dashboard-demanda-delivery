@@ -71,11 +71,16 @@ El detalle de cada una (técnica y qué no se puede concluir) está en
 
 ## Dashboards
 
-- **Power BI:** *en construcción.* Guía, medidas DAX y tema en
-  [`dashboard/powerbi/`](dashboard/powerbi/).
+- **Power BI:** proyecto **PBIP** en [`dashboard/powerbi/`](dashboard/powerbi/) (se abre con
+  `dashboard_demanda.pbip` tras correr `python -m pipeline.build`). Guía, medidas DAX y tema en
+  la misma carpeta.
+  - [Informe completo (PDF)](docs/dashboard_demanda.pdf)
+  - **1. Describir** — Resumen ejecutivo: KPIs, tendencia, categorías, segmentadores
+  - **2. Comparar** — Categorías y promociones: matriz, Pareto ABC, índice controlado
+  - **3. Diagnosticar** — Tendencia semanal, cohortes, deciles de precio, elasticidad
+  - **4. Hallazgos** — Centros: ranking, dispersión área operativa, tipos de centro
+  - **5. Validación** — Controles de totales, 17 reglas de calidad, conciliación KPIs
 - **Looker Studio:** *en construcción.* Guía en [`dashboard/looker/`](dashboard/looker/).
-
-<!-- Al terminar: capturas de docs/capturas/ y enlace público de Looker Studio -->
 
 ## Cómo reproducirlo
 

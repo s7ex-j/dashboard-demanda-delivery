@@ -1,0 +1,12 @@
+relationship e5cececf-991c-ceeb-d6c8-31064d81dea4
+	fromColumn: fct_demanda.meal_id
+	toColumn: dim_comida.meal_id
+
+relationship 6077fa03-9557-f524-ccab-a7df044427ed
+	fromColumn: fct_demanda.center_id
+	toColumn: dim_centro.center_id
+
+relationship b074af2d-e5c9-ad76-acae-2aad8ed160d2
+	fromColumn: fct_demanda.semana
+	toColumn: dim_semana.semana
+

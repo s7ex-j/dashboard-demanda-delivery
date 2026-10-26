@@ -1,0 +1,136 @@
+table mart_comidas_abc
+	lineageTag: f8a28c1d-ccef-4fbd-89eb-dd0398571d52
+
+	measure '% acumulado' = SUM ( mart_comidas_abc[participacion_acumulada] )
+		formatString: 0\ %;-0\ %;0\ %
+		lineageTag: 6a9b5434-a171-491e-a4a2-87ddb80a545c
+
+	column meal_id
+		dataType: int64
+		formatString: 0
+		lineageTag: fe232be6-7839-45b1-add1-7f04e4bc0db6
+		summarizeBy: sum
+		sourceColumn: meal_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: 7f564917-8c77-48f1-b316-966291bd876c
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column cocina
+		dataType: string
+		lineageTag: d7aebd69-0757-487c-a045-44b1d17a8254
+		summarizeBy: none
+		sourceColumn: cocina
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos
+		dataType: int64
+		formatString: 0
+		lineageTag: b2d35845-baab-4dcd-8300-9ecd4769ed1c
+		summarizeBy: sum
+		sourceColumn: pedidos
+
+		annotation SummarizationSetBy = Automatic
+
+	column ingreso_estimado
+		dataType: double
+		lineageTag: 301e3ab6-f31b-4638-a7a8-7d138f88a3f7
+		summarizeBy: sum
+		sourceColumn: ingreso_estimado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column precio_promedio
+		dataType: double
+		lineageTag: 5635347e-d8d7-4777-a8f1-d809c5428e4d
+		summarizeBy: sum
+		sourceColumn: precio_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column n_centros
+		dataType: int64
+		formatString: 0
+		lineageTag: 9cb42960-c9a8-4f7f-b1dc-46f42c27f6f7
+		summarizeBy: sum
+		sourceColumn: n_centros
+
+		annotation SummarizationSetBy = Automatic
+
+	column participacion
+		dataType: double
+		lineageTag: 829da62b-c686-4b7f-9cc0-8dc51eb6b4be
+		summarizeBy: sum
+		sourceColumn: participacion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column participacion_acumulada
+		dataType: double
+		lineageTag: 59f8fe05-d048-47c5-b50f-aad2489951b6
+		summarizeBy: sum
+		sourceColumn: participacion_acumulada
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column clase_abc
+		dataType: string
+		lineageTag: c2527931-3151-4f3a-b492-f83957f4e4c4
+		summarizeBy: none
+		sourceColumn: clase_abc
+
+		annotation SummarizationSetBy = Automatic
+
+	column ranking_global
+		dataType: int64
+		formatString: 0
+		lineageTag: d78a7e4f-7873-4be3-8d5a-4874e0fa0aa6
+		summarizeBy: sum
+		sourceColumn: ranking_global
+
+		annotation SummarizationSetBy = Automatic
+
+	column ranking_en_categoria
+		dataType: int64
+		formatString: 0
+		lineageTag: 091715d1-f847-4b2f-b001-ffadbebe33f0
+		summarizeBy: sum
+		sourceColumn: ranking_en_categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column participacion_en_categoria
+		dataType: double
+		lineageTag: 90365d20-e4b2-433a-a9b1-fc427c42c0fe
+		summarizeBy: sum
+		sourceColumn: participacion_en_categoria
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition mart_comidas_abc = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_comidas_abc.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

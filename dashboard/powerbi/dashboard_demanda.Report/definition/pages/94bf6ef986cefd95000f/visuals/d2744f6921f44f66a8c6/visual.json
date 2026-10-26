@@ -1,0 +1,115 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "d2744f6921f44f66a8c6",
+  "position": {
+    "x": 972,
+    "y": 686,
+    "z": 6000,
+    "height": 326,
+    "width": 428,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_centro"
+                    }
+                  },
+                  "Property": "center_id"
+                }
+              },
+              "queryRef": "dim_centro.center_id",
+              "nativeQueryRef": "center_id",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_centro"
+                    }
+                  },
+                  "Property": "tipo_centro"
+                }
+              },
+              "queryRef": "dim_centro.tipo_centro",
+              "nativeQueryRef": "tipo_centro"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "dim_centro"
+                        }
+                      },
+                      "Property": "area_operativa"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "dim_centro.area_operativa",
+              "nativeQueryRef": "Área operativa",
+              "active": true,
+              "displayName": "Área operativa"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Medidas"
+                    }
+                  },
+                  "Property": "Pedidos"
+                }
+              },
+              "queryRef": "_Medidas.Pedidos",
+              "nativeQueryRef": "Pedidos"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "bubbles": [
+        {
+          "properties": {
+            "bubbleSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "-22L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -1,0 +1,58 @@
+table dim_centro
+	lineageTag: 11b0ae6a-ecfc-4a02-bd13-722b30cbf366
+
+	column center_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c752723-1224-4026-b8fa-900a564e7690
+		summarizeBy: none
+		sourceColumn: center_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_ciudad
+		dataType: int64
+		formatString: 0
+		lineageTag: 81966ab0-3e24-4497-b490-7bf321fe2b9a
+		summarizeBy: none
+		sourceColumn: codigo_ciudad
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo_region
+		dataType: int64
+		formatString: 0
+		lineageTag: 173cafef-ede7-4650-aab9-f27f88dd5fd6
+		summarizeBy: none
+		sourceColumn: codigo_region
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_centro
+		dataType: string
+		lineageTag: 66c6096f-532f-4738-b68b-2a904056f3d5
+		summarizeBy: none
+		sourceColumn: tipo_centro
+
+		annotation SummarizationSetBy = Automatic
+
+	column area_operativa
+		dataType: double
+		lineageTag: f75d1cf0-18bc-4fa3-bb03-d0353005a6b9
+		summarizeBy: none
+		sourceColumn: area_operativa
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition dim_centro = m
+		mode: import
+		source =
+				let
+				    Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\estrella\dim_centro.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

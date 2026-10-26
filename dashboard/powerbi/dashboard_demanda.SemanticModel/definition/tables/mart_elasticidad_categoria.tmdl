@@ -1,0 +1,48 @@
+table mart_elasticidad_categoria
+	lineageTag: 49cb5802-49dc-42d1-a85b-ac4bea4c05ce
+
+	column categoria
+		dataType: string
+		lineageTag: cef7eb30-20d7-4320-acf8-f078949f4603
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column elasticidad
+		dataType: double
+		formatString: 0
+		lineageTag: 75d3d8f0-db9e-4ad6-a1a0-0569b11b5002
+		summarizeBy: average
+		sourceColumn: elasticidad
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = User
+
+	column especificacion
+		dataType: string
+		lineageTag: 9668c3ff-b613-49c9-a65c-24f9e810a418
+		summarizeBy: none
+		sourceColumn: especificacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column nota
+		dataType: string
+		lineageTag: 104ca074-86f6-47eb-bbb1-03288bbe9969
+		summarizeBy: none
+		sourceColumn: nota
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_elasticidad_categoria = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_elasticidad_categoria.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

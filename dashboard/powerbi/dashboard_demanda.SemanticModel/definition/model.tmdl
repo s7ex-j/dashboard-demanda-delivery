@@ -1,0 +1,31 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["fct_demanda","dim_comida","dim_centro","dim_semana","mart_kpis","calidad_resultados","_Medidas","mart_comidas_abc","mart_promociones_indice","mart_cohortes","mart_bandas_precio","mart_elasticidad_rcs","mart_elasticidad_categoria"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fct_demanda
+ref table dim_comida
+ref table dim_centro
+ref table dim_semana
+ref table mart_kpis
+ref table calidad_resultados
+ref table _Medidas
+ref table mart_comidas_abc
+ref table mart_promociones_indice
+ref table mart_cohortes
+ref table mart_bandas_precio
+ref table mart_elasticidad_rcs
+ref table mart_elasticidad_categoria
+
+ref cultureInfo es-MX
+

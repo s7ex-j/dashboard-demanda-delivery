@@ -2,6 +2,15 @@
 
 Página **1920 × 1080**. Posición y tamaño se escriben en *Formato del visual → General → Propiedades* (Tamaño: Alto, Ancho · Posición: Horizontal = X, Vertical = Y).
 
+## Antes de seguir (una sola vez)
+
+1. **Apaga las relaciones automáticas** (una vez): *Archivo → Opciones y configuración → Opciones → ARCHIVO ACTUAL → Carga de datos* → desmarca **Detectar automáticamente nuevas relaciones después de cargar los datos**. Si no, cada mart que cargues puede quedar unido a una dimensión o a otro mart y filtrar mal (por ejemplo, `mart_comidas_abc[meal_id]` con `dim_comida[meal_id]`).
+2. **Comprueba la vista de modelo**: solo 3 relaciones (`fct_demanda` → `dim_comida`, `dim_centro`, `dim_semana`), todas varios a uno y dirección única. Los marts y `_Medidas`, sueltos.
+3. **Al cargar una tabla nueva, vuelve a aplicar *Resumir por: Ninguno*** en sus columnas de la lista de abajo. Cada tabla nueva llega con *Suma* por defecto en las columnas numéricas.
+4. **Los segmentadores no filtran los marts.** Los marts no tienen relaciones, así que el ABC (página 2) y toda la página 3 muestran siempre el total. En la página 2: selecciona un segmentador → *Formato → Editar interacciones* → en el visual ABC elige el ícono **Ninguno** (círculo tachado). Así nadie espera que cambie.
+5. **Formato hecho a mano manda sobre el tema.** Si un visual ignora el tema (bordes, etiquetas), clic derecho → *Restablecer al valor predeterminado*.
+6. **Cada visual nuevo, revisa la sección *Comprueba*** antes de pasar al siguiente: si el número no coincide, el error está en ese visual y es fácil de encontrar.
+
 ## Reglas que evitan los errores más comunes
 
 1. **Medida o columna.** Lo que dice *Medida* se arrastra desde la tabla `_Medidas` (ícono de calculadora) y ya viene calculado: no tiene agregación. Lo que dice *Columna* se arrastra desde su tabla y se le pone la agregación indicada (flecha del campo en el pozo).
@@ -122,6 +131,8 @@ Formato: Número entero, separador de miles.
 - Doble clic en el campo del pozo → renombrar a "Pedidos totales" (es la etiqueta pequeña)
 - Valor: unidades de visualización **Automático**
 
+**Comprueba:** 119,56 M (119 557 485)
+
 #### Tarjeta · Ingreso estimado
 
 **Visual:** Tarjeta  ·  **X** 419 · **Y** 192 · **Ancho** 339 · **Alto** 96
@@ -132,6 +143,8 @@ Formato: Número entero, separador de miles.
 
 - Doble clic en el campo del pozo → renombrar a "Ingreso estimado" (es la etiqueta pequeña)
 - Valor: unidades de visualización **Automático**
+
+**Comprueba:** ≈ 31,9 mil M (11 cifras). Debe ser igual a `ingreso_estimado` de `mart_kpis`
 
 #### Tarjeta · Precio promedio ponderado
 
@@ -144,6 +157,8 @@ Formato: Número entero, separador de miles.
 - Doble clic en el campo del pozo → renombrar a "Precio ponderado" (es la etiqueta pequeña)
 - Valor: unidades de visualización **Automático**
 
+**Comprueba:** ≈ 267,01. **No** 332,24: ese es el promedio simple por fila (página 5)
+
 #### Tarjeta · Centros activos
 
 **Visual:** Tarjeta  ·  **X** 1161 · **Y** 192 · **Ancho** 339 · **Alto** 96
@@ -155,6 +170,8 @@ Formato: Número entero, separador de miles.
 - Doble clic en el campo del pozo → renombrar a "Centros" (es la etiqueta pequeña)
 - Valor: unidades de visualización **Automático**
 
+**Comprueba:** 77
+
 #### Tarjeta · Comidas activas
 
 **Visual:** Tarjeta  ·  **X** 1532 · **Y** 192 · **Ancho** 340 · **Alto** 96
@@ -165,6 +182,8 @@ Formato: Número entero, separador de miles.
 
 - Doble clic en el campo del pozo → renombrar a "Comidas" (es la etiqueta pequeña)
 - Valor: unidades de visualización **Automático**
+
+**Comprueba:** 51
 
 #### Pedidos por semana
 
@@ -181,6 +200,8 @@ Formato: Número entero, separador de miles.
 - Líneas: `Pedidos` gris claro (#A6A6A6), `Media móvil 4 semanas` azul (#3599B8), 2 px
 - Leyenda: arriba a la izquierda
 
+**Comprueba:** Línea entre ~380 mil y ~1,3 M por semana; el pico (1,30 M) está en la semana 48 · La media móvil empieza en la semana 4 (las 3 primeras quedan en blanco) · Si ves una sola línea plana o un único punto, `semana` no está en *No resumir*
+
 #### Pedidos por categoría
 
 **Visual:** Gráfico de barras agrupadas  ·  **X** 1284 · **Y** 382 · **Ancho** 584 · **Alto** 318
@@ -194,6 +215,8 @@ Formato: Número entero, separador de miles.
 - Etiquetas de datos: activadas, unidades **Millones**, 1 decimal
 - Eje X: desactivado (las etiquetas ya dan el valor)
 
+**Comprueba:** 14 barras. Beverages arriba con 40,48 M; Biryani abajo con 0,63 M
+
 #### Pedidos por fila según tipo de centro
 
 **Visual:** Gráfico de columnas agrupadas  ·  **X** 52 · **Y** 798 · **Ancho** 579 · **Alto** 214
@@ -205,6 +228,8 @@ Formato: Número entero, separador de miles.
 
 - Etiquetas de datos activadas, 0 decimales
 - Eje Y desactivado
+
+**Comprueba:** TYPE_B 319 · TYPE_A 262 · TYPE_C 207
 
 #### Pedidos por fila según promoción
 
@@ -218,6 +243,8 @@ Formato: Número entero, separador de miles.
 - Ordenar eje → **Pedidos por fila**, **Ascendente** (de Sin promoción a Email + home)
 - Etiquetas de datos activadas, 0 decimales
 - Eje Y desactivado
+
+**Comprueba:** Sin promoción 211 · Solo email 431 · Solo home 456 · Email + home 816
 
 #### Cómo leer esta página
 
@@ -318,6 +345,8 @@ Formato: Número entero.
 - Formato condicional → `Participación pedidos` → **Barras de datos** (color #3599B8)
 - Renombrar en el pozo: "Participación", "Ranking", "Precio ponderado"
 
+**Comprueba:** Beverages: 40 480 525 pedidos, 33,9 %, ranking 1 · Fila Total: 119 557 485 y 100,0 %; el ranking en blanco
+
 #### Clasificación ABC de comidas
 
 **Visual:** Gráfico de líneas y columnas apiladas  ·  **X** 980 · **Y** 254 · **Ancho** 888 · **Alto** 334
@@ -331,12 +360,14 @@ Formato: Número entero.
 | Información sobre herramientas | Columna `mart_comidas_abc[meal_id]` | No resumir |
 | Información sobre herramientas | Columna `mart_comidas_abc[categoria]` | — |
 
-- Antes de armarlo, comprueba en *Vista de tabla* que `participacion_acumulada` va de 0 a 1 (0,1996 … 1)
+- Antes de armarlo, comprueba en *Vista de tabla* que `participacion_acumulada` va de 0 a 1: empieza en la participación de la comida más vendida y termina en 1
 - Eje X = puesto de la comida (1 = la que más vende), así las barras ya salen ordenadas. Eje X → Tipo: **Categórico**; título "Comidas ordenadas por pedidos"
 - Colores de leyenda: A #404040, B #A6A6A6, C #DCDCDC
 - Línea: interpolación **Lineal** (no suavizada), color #3599B8, 2 px
 - Eje Y secundario (línea): formato **Porcentaje**, mínimo 0, máximo 1
-- Analítica (lupa) → Línea constante en el eje Y secundario: 0,8, discontinua, etiqueta "80 %"
+- Opcional: si *Analítica* (lupa) ofrece *Línea constante* para este visual, ponla en 0,8 con etiqueta "80 %". En algunas versiones los combinados no la tienen: entonces omítela
+
+**Comprueba:** 51 barras ordenadas de mayor a menor; la línea siempre sube y termina en 1,00 (100 %) · Con valores de 16 cifras o *E+16*, el mart se cargó desde CSV: cárgalo desde Parquet
 
 #### Pedidos por semana del año
 
@@ -351,6 +382,8 @@ Formato: Número entero.
 - Eje X → Tipo: **Continuo**
 - Colores: año 1 #BFBFBF, año 2 #737373, año 3 #3599B8 (el año 3 solo tiene 41 semanas)
 
+**Comprueba:** Tres líneas; la del año 3 termina en la semana 41 del año (semana 145)
+
 #### Área operativa y pedidos
 
 **Visual:** Gráfico de dispersión  ·  **X** 972 · **Y** 686 · **Ancho** 428 · **Alto** 326
@@ -364,6 +397,8 @@ Formato: Número entero.
 
 - Marcadores tamaño 6
 - Títulos de eje: activados ("Área operativa", "Pedidos")
+
+**Comprueba:** 77 puntos. Si ves 1 a 3 puntos, `center_id` no está en *No resumir*
 
 #### Ranking de centros
 
@@ -380,6 +415,8 @@ Formato: Número entero.
 - Ordenar por **Pedidos**, descendente
 - Totales: desactivados
 - Renombrar: "Centro", "Tipo", "Ranking", "Participación"
+
+**Comprueba:** 77 filas; la suma de la participación es 100 %
 
 ## Página 3. Diagnosticar
 
@@ -407,6 +444,8 @@ Fondo: `fondo_3_diagnosticar.png`
 - Formato condicional → **Color de fondo** → Escala de colores: mínimo #FFFFFF, máximo #3599B8
 - Subtotales de filas y columnas: desactivados (un promedio de índices no tiene sentido)
 
+**Comprueba:** Valores mayores que 1 en casi todas las celdas (con promoción se vende más que sin ella) · 14 filas × 3 columnas (Email + home, Solo email, Solo home)
+
 #### Permanencia de comidas en los centros
 
 **Visual:** Matriz  ·  **X** 980 · **Y** 246 · **Ancho** 888 · **Alto** 338
@@ -421,6 +460,8 @@ Fondo: `fondo_3_diagnosticar.png`
 - Formato condicional → Color de fondo → escala #FFFFFF → #3599B8
 - Subtotales desactivados; tamaño de texto 10 si no cabe
 
+**Comprueba:** Primera columna (periodo 0) toda en 100 % · Las cohortes de abajo tienen menos columnas: es el control de censura, no un error
+
 #### Pedidos por decil de precio
 
 **Visual:** Gráfico de líneas  ·  **X** 52 · **Y** 682 · **Ancho** 579 · **Alto** 330
@@ -432,6 +473,8 @@ Fondo: `fondo_3_diagnosticar.png`
 
 - Panel Filtros → *Filtros en este objeto visual* → `categoria` → solo **Todas**
 - Eje X → Tipo: **Categórico**; marcadores activados
+
+**Comprueba:** 10 puntos. Si ves 150 puntos, falta el filtro `categoria = Todas`
 
 #### Elasticidad según el nivel de precio
 
@@ -446,6 +489,8 @@ Fondo: `fondo_3_diagnosticar.png`
 - Analítica (ícono de lupa) → **Línea constante** → valor −1, color #FB8281, discontinua, etiqueta "Elasticidad = −1"
 - Color de la línea #3599B8, marcadores activados
 
+**Comprueba:** Empieza en +0,04 (precio 125), baja hasta −1,51 (precio 325) y termina en −1,25 (precio 650)
+
 #### Elasticidad por categoría
 
 **Visual:** Gráfico de barras agrupadas  ·  **X** 1290 · **Y** 682 · **Ancho** 578 · **Alto** 330
@@ -458,6 +503,8 @@ Fondo: `fondo_3_diagnosticar.png`
 - Ordenar eje → **Promedio de elasticidad**, **Ascendente** (la más negativa arriba)
 - Etiquetas de datos activadas, 2 decimales
 - Color #404040
+
+**Comprueba:** Arriba Fish −2,49 y Seafood −2,48; abajo Pasta −0,28
 
 ## Página 4. Hallazgos y límites
 
@@ -503,6 +550,8 @@ Fondo: `fondo_5_validacion.png`
 
 - Renombrar en el pozo: "Control: pedidos = 119 557 485"
 
+**Comprueba:** OK
+
 #### Tarjeta · Control filas
 
 **Visual:** Tarjeta  ·  **X** 512 · **Y** 112 · **Ancho** 432 · **Alto** 96
@@ -512,6 +561,8 @@ Fondo: `fondo_5_validacion.png`
 | Campos / Valor | Medida **Control filas** (tabla `_Medidas`) | — (es medida) |
 
 - Renombrar en el pozo: "Control: filas = 456 548"
+
+**Comprueba:** OK
 
 #### Tarjeta · Pedidos
 
@@ -523,6 +574,8 @@ Fondo: `fondo_5_validacion.png`
 
 - Renombrar en el pozo: "Pedidos (DAX)"
 
+**Comprueba:** 119 557 485
+
 #### Tarjeta · Precio promedio fila
 
 **Visual:** Tarjeta  ·  **X** 1440 · **Y** 112 · **Ancho** 432 · **Alto** 96
@@ -532,6 +585,8 @@ Fondo: `fondo_5_validacion.png`
 | Campos / Valor | Medida **Precio promedio fila** (tabla `_Medidas`) | — (es medida) |
 
 - Renombrar en el pozo: "Precio promedio fila (DAX)"
+
+**Comprueba:** 332,24
 
 #### Reglas de calidad de datos
 
@@ -546,6 +601,8 @@ Fondo: `fondo_5_validacion.png`
 - Totales activados: el total de `filas_con_error` debe ser **0**
 - Formato condicional en `filas_con_error`: color de fuente rojo #D70C0C si > 0
 
+**Comprueba:** 17 filas, todas en 0; total 0
+
 #### DAX frente a SQL · Tabla SQL
 
 **Visual:** Tabla  ·  **X** 980 · **Y** 302 · **Ancho** 888 · **Alto** 120
@@ -558,6 +615,7 @@ Fondo: `fondo_5_validacion.png`
 
 - Renombrar: "Pedidos (SQL)", "Filas (SQL)", "Precio promedio (SQL)"
 - Totales desactivados
+- En el panel Datos: `pedidos_totales` y `n_filas` → Número entero con separador de miles; `precio_promedio_fila` → 2 decimales (mismo formato que las medidas, para comparar a simple vista)
 
 #### DAX frente a SQL · Tabla DAX
 
@@ -571,6 +629,8 @@ Fondo: `fondo_5_validacion.png`
 
 - Renombrar: "Pedidos (DAX)", "Filas (DAX)", "Precio promedio (DAX)"
 - Debe mostrar exactamente los mismos tres números que la tabla SQL
+
+**Comprueba:** Mismos tres números en las dos tablas
 
 #### DAX frente a SQL · Nota
 

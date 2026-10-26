@@ -1,0 +1,58 @@
+table mart_cohortes
+	lineageTag: df395282-ed9a-43c4-bcba-1edc940962c4
+
+	column cohorte_trimestre
+		dataType: int64
+		formatString: 0
+		lineageTag: 9037ff00-4697-498c-ab0d-ce4fff37c15b
+		summarizeBy: sum
+		sourceColumn: cohorte_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column periodo_desde_inicio
+		dataType: int64
+		formatString: 0
+		lineageTag: 8a70cd52-0895-4ca1-a680-d0d4d78dea20
+		summarizeBy: sum
+		sourceColumn: periodo_desde_inicio
+
+		annotation SummarizationSetBy = Automatic
+
+	column pares_observables
+		dataType: int64
+		formatString: 0
+		lineageTag: c140a443-e2f2-4aea-8b37-5320c9ded565
+		summarizeBy: sum
+		sourceColumn: pares_observables
+
+		annotation SummarizationSetBy = Automatic
+
+	column pares_activos
+		dataType: int64
+		formatString: 0
+		lineageTag: 2c867815-1ca5-4914-89ee-593ef88e9fed
+		summarizeBy: sum
+		sourceColumn: pares_activos
+
+		annotation SummarizationSetBy = Automatic
+
+	column tasa_retencion
+		dataType: double
+		formatString: 0
+		lineageTag: 45d3cb55-090e-4936-b9e6-853bed0a1921
+		summarizeBy: sum
+		sourceColumn: tasa_retencion
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_cohortes = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_cohortes.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

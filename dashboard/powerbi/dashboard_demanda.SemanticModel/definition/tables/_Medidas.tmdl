@@ -1,0 +1,102 @@
+table _Medidas
+	lineageTag: e6a40fa5-810e-4bea-bf97-33b7293d7455
+
+	measure Pedidos = SUM ( fct_demanda[pedidos] )
+		formatString: #,0
+		lineageTag: dfced0bd-a3e4-4f4b-8b67-cfb94e27dda7
+
+	measure Filas = COUNTROWS ( fct_demanda )
+		formatString: #,0
+		lineageTag: 58c0caa7-12db-4ea6-9f1b-02a891128c5a
+
+	measure 'Precio promedio fila' = AVERAGE ( fct_demanda[precio_checkout] )
+		formatString: 0.00
+		lineageTag: 5ea413fb-73d5-43bd-b659-dddaa3d1ef16
+
+	measure 'Control pedidos totales' = IF ( CALCULATE ( [Pedidos], REMOVEFILTERS () ) = 119557485, "OK", "Revisar" )
+		lineageTag: bcb2894e-7fe9-4543-aaa0-d63e55c1e98b
+
+	measure 'Control filas' = IF ( CALCULATE ( [Filas], REMOVEFILTERS () ) = 456548, "OK", "Revisar" )
+		lineageTag: 308c9d56-c245-4f80-8e30-0d9e593ad143
+
+	measure 'Ingreso estimado' = SUM ( fct_demanda[ingreso_estimado] )
+		lineageTag: a776bcca-28b7-4d51-8f1c-0c2189f1a801
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Precio promedio ponderado' = DIVIDE ( [Ingreso estimado], [Pedidos] )
+		lineageTag: 231b0fc7-50a3-4278-b9d7-7c45764e8f62
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pedidos por fila' = DIVIDE ( [Pedidos], [Filas] )
+		lineageTag: ecc2738e-86d7-437e-aa45-13222930b7a7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Centros activos' = DISTINCTCOUNT ( fct_demanda[center_id] )
+		formatString: 0
+		lineageTag: 7c4343bc-bfd8-4ae4-8188-64adf2ee70a2
+
+	measure 'Comidas activas' = DISTINCTCOUNT ( fct_demanda[meal_id] )
+		formatString: 0
+		lineageTag: 4b08803a-b1fd-4433-a3c9-cf73e1c5357f
+
+	measure 'Media móvil 4 semanas' =
+			
+			VAR s = SELECTEDVALUE ( dim_semana[semana] )
+			VAR ventana =
+			    CALCULATETABLE (
+			        VALUES ( dim_semana[semana] ),
+			        REMOVEFILTERS ( dim_semana ),
+			        dim_semana[semana] > s - 4,
+			        dim_semana[semana] <= s
+			    )
+			VAR semanasConDatos =
+			    CALCULATE ( DISTINCTCOUNT ( fct_demanda[semana] ), REMOVEFILTERS ( dim_semana ), ventana )
+			RETURN
+			    IF (
+			        NOT ISBLANK ( s ) && semanasConDatos = 4,
+			        CALCULATE ( [Pedidos], REMOVEFILTERS ( dim_semana ), ventana ) / 4
+			    )
+		lineageTag: d7ea66a3-4910-4380-b953-9e8fec278ba5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Participación pedidos' =
+			
+			DIVIDE (
+			    [Pedidos],
+			    CALCULATE ( [Pedidos], ALLSELECTED ( dim_comida ), ALLSELECTED ( dim_centro ) )
+			)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: 133fbdb1-eb1d-485e-b3fc-0fae1ca58bec
+
+	measure 'Ranking categoría' =
+			
+			IF (
+			    HASONEVALUE ( dim_comida[categoria] ),
+			    RANKX ( ALLSELECTED ( dim_comida[categoria] ), [Pedidos], , DESC, DENSE )
+			)
+		formatString: 0
+		lineageTag: abd3ac9b-fbcd-4b25-8117-c607f5d9bc5a
+
+	measure 'Ranking centro' = IF ( HASONEVALUE ( dim_centro[center_id] ), RANKX ( ALLSELECTED ( dim_centro ), [Pedidos], , DESC, SKIP ) )
+		formatString: 0
+		lineageTag: 3276f0fa-584d-42bc-8ea4-20ab269ffa4e
+
+	measure 'Tasa de retención' = DIVIDE ( SUM ( mart_cohortes[pares_activos] ), SUM ( mart_cohortes[pares_observables] ) )
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: f048f99d-576d-4c7b-a539-74243dd4cd0a
+
+	partition _Medidas = m
+		mode: import
+		source =
+				let
+				  Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Columna 1" = _t]),
+				    #"Columnas quitadas" = Table.RemoveColumns(Origen,{"Columna 1"})
+				in
+				  #"Columnas quitadas"
+
+	annotation PBI_ResultType = Table
+

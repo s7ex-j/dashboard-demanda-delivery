@@ -1,0 +1,74 @@
+table mart_promociones_indice
+	lineageTag: 06b2a065-e1f5-460e-8514-ef540e214fd4
+
+	column categoria
+		dataType: string
+		lineageTag: d16cee85-dfa5-41eb-b243-7843cdbe2662
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_promocion
+		dataType: string
+		lineageTag: 61ac0281-1385-4812-acfa-5c7554475370
+		summarizeBy: none
+		sourceColumn: tipo_promocion
+
+		annotation SummarizationSetBy = Automatic
+
+	column n_filas
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f19e7ed-053d-4d5d-b9aa-ea894df8d63e
+		summarizeBy: sum
+		sourceColumn: n_filas
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos_promedio_fila
+		dataType: double
+		formatString: 0
+		lineageTag: 8012d443-0663-4988-81c7-b4b5b1fce265
+		summarizeBy: sum
+		sourceColumn: pedidos_promedio_fila
+
+		annotation SummarizationSetBy = Automatic
+
+	column indice_vs_sin_promo
+		dataType: double
+		formatString: 0.00
+		lineageTag: 4a2c108a-e65c-4a68-b859-e9c065299605
+		summarizeBy: sum
+		sourceColumn: indice_vs_sin_promo
+
+		annotation SummarizationSetBy = Automatic
+
+	column indice_mediano_vs_sin_promo
+		dataType: double
+		formatString: 0
+		lineageTag: 7a917f8d-3c29-42f3-b865-3a81cdcad0c9
+		summarizeBy: sum
+		sourceColumn: indice_mediano_vs_sin_promo
+
+		annotation SummarizationSetBy = Automatic
+
+	column variacion_precio_pct_promedio
+		dataType: double
+		formatString: 0
+		lineageTag: c43afba0-72b5-4f68-b754-6380fe02e77b
+		summarizeBy: sum
+		sourceColumn: variacion_precio_pct_promedio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition mart_promociones_indice = m
+		mode: import
+		source =
+				let
+				       Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts_parquet\mart_promociones_indice.parquet"))
+				   in
+				       Origen
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "9628eed842471f0c56ff",
+  "position": {
+    "x": 52,
+    "y": 682,
+    "z": 2000,
+    "height": 330,
+    "width": 579,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "mart_bandas_precio"
+                    }
+                  },
+                  "Property": "decil_precio"
+                }
+              },
+              "queryRef": "mart_bandas_precio.decil_precio",
+              "nativeQueryRef": "decil_precio",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart_bandas_precio"
+                        }
+                      },
+                      "Property": "pedidos_promedio_fila"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(mart_bandas_precio.pedidos_promedio_fila)",
+              "nativeQueryRef": "Promedio de pedidos_promedio_fila"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "mart_bandas_precio"
+                      }
+                    },
+                    "Property": "pedidos_promedio_fila"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "lineStyles": [
+        {
+          "properties": {
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'linear'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

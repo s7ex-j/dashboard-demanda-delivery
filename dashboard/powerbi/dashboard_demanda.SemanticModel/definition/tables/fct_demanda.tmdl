@@ -1,0 +1,124 @@
+table fct_demanda
+	lineageTag: 0c212f8c-641e-4e96-9f56-66c9dd7a28d6
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: d051cc5f-9752-49e2-909a-aebbfe75467c
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana
+		dataType: int64
+		formatString: 0
+		lineageTag: c18818c0-96cc-436c-952c-8c4ec8a41486
+		summarizeBy: none
+		sourceColumn: semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column center_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 1cd78044-2b12-46c7-b9b3-23c15b1ff12a
+		summarizeBy: none
+		sourceColumn: center_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column meal_id
+		dataType: int64
+		formatString: 0
+		lineageTag: a97310f0-fbfc-42e4-91a6-a8ce5b56f762
+		summarizeBy: none
+		sourceColumn: meal_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column pedidos
+		dataType: int64
+		formatString: 0
+		lineageTag: 290e070a-72e7-4452-a3bb-96c32c9062e5
+		summarizeBy: sum
+		sourceColumn: pedidos
+
+		annotation SummarizationSetBy = Automatic
+
+	column precio_checkout
+		dataType: double
+		lineageTag: 91cb19bc-e56b-4aa6-befc-9509e366f131
+		summarizeBy: sum
+		sourceColumn: precio_checkout
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column precio_base
+		dataType: double
+		lineageTag: d6b6b078-8f80-4b86-835c-cbbe1554e443
+		summarizeBy: sum
+		sourceColumn: precio_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column promo_email
+		dataType: int64
+		formatString: 0
+		lineageTag: dc813f14-e661-4591-986d-d38d9660240e
+		summarizeBy: sum
+		sourceColumn: promo_email
+
+		annotation SummarizationSetBy = Automatic
+
+	column destacado_home
+		dataType: int64
+		formatString: 0
+		lineageTag: ce60f3c0-aca8-4251-8a16-2b91ef4a9520
+		summarizeBy: sum
+		sourceColumn: destacado_home
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_promocion
+		dataType: string
+		lineageTag: 94484dde-5b96-45cb-b306-f384ef38caad
+		summarizeBy: none
+		sourceColumn: tipo_promocion
+
+		annotation SummarizationSetBy = Automatic
+
+	column variacion_precio_pct
+		dataType: double
+		lineageTag: 9a45d427-4413-48a1-b4b7-40862172b828
+		summarizeBy: sum
+		sourceColumn: variacion_precio_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ingreso_estimado
+		dataType: double
+		lineageTag: ba861e95-4e9d-4182-ba7d-2956fd9c928b
+		summarizeBy: sum
+		sourceColumn: ingreso_estimado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition fct_demanda = m
+		mode: import
+		source =
+				let
+				    Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\estrella\fct_demanda.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

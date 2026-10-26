@@ -1,0 +1,66 @@
+table dim_semana
+	lineageTag: 08051307-c352-46a2-ab72-58f04fe34cc7
+
+	column semana
+		dataType: int64
+		formatString: 0
+		lineageTag: e0323c96-33b4-4f95-878f-3c87c96ded29
+		summarizeBy: none
+		sourceColumn: semana
+
+		annotation SummarizationSetBy = Automatic
+
+	column anio_relativo
+		dataType: int64
+		formatString: 0
+		lineageTag: 1c4378de-dfa3-4e4f-8438-c748642698af
+		summarizeBy: none
+		sourceColumn: anio_relativo
+
+		annotation SummarizationSetBy = Automatic
+
+	column semana_del_anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 482c2a0c-edf0-4f1f-954a-2ea47a3a1886
+		summarizeBy: none
+		sourceColumn: semana_del_anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column trimestre_del_anio
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ed45607-fa15-4a1d-9d78-479582c0c670
+		summarizeBy: none
+		sourceColumn: trimestre_del_anio
+
+		annotation SummarizationSetBy = Automatic
+
+	column etiqueta_trimestre
+		dataType: string
+		lineageTag: 4a65fa74-7dda-474e-980c-57f8041e9e63
+		summarizeBy: none
+		sourceColumn: etiqueta_trimestre
+
+		annotation SummarizationSetBy = Automatic
+
+	column bloque_4_semanas
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ff6ca51-d2a8-42bc-bbef-a264fa53bdad
+		summarizeBy: none
+		sourceColumn: bloque_4_semanas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_semana = m
+		mode: import
+		source =
+				let
+				    Origen = Parquet.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\estrella\dim_semana.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null])
+				in
+				    Origen
+
+	annotation PBI_ResultType = Table
+

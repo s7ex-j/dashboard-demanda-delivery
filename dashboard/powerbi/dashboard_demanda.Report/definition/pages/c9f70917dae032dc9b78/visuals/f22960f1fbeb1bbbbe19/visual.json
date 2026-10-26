@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "f22960f1fbeb1bbbbe19",
+  "position": {
+    "x": 1284.2857142857144,
+    "y": 798.57142857142867,
+    "z": 12000,
+    "height": 227.14285714285717,
+    "width": 584.28571428571433,
+    "tabOrder": 12000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Pedidos:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  },
+                  {
+                    "value": " suma de num_orders. ",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  },
+                  {
+                    "value": "Fila:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  },
+                  {
+                    "value": " una comida en un centro durante una semana; 456 548 filas no son 456 548 pedidos.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Ingreso estimado:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  },
+                  {
+                    "value": " pedidos × precio de checkout. Unidades monetarias anónimas: el dataset no dice moneda ni país.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Precio ponderado:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  },
+                  {
+                    "value": " ingreso ÷ pedidos. Pesa más lo que más se vende.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Las semanas son relativas (1 a 145), sin fechas de calendario.",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Los filtros de arriba afectan a toda la página",
+                    "textStyle": {
+                      "fontSize": "14pt",
+                      "color": "#333333"
+                    }
+                  }
+                ],
+                "listType": "bullet"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

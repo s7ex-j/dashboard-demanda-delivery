@@ -133,14 +133,14 @@ V["pareto"] = dict(
            ("Eje Y de línea", "C:mart_comidas_abc[participacion_acumulada]", "Suma"),
            ("Información sobre herramientas", "C:mart_comidas_abc[meal_id]", "No resumir"),
            ("Información sobre herramientas", "C:mart_comidas_abc[categoria]", "")],
-    ajustes=["Antes de armarlo, comprueba en *Vista de tabla* que `participacion_acumulada` va de 0 a 1 "
-             "(0,1996 … 1)",
+    ajustes=["Antes de armarlo, comprueba en *Vista de tabla* que `participacion_acumulada` va de 0 a 1: "
+             "empieza en la participación de la comida más vendida y termina en 1",
              "Eje X = puesto de la comida (1 = la que más vende), así las barras ya salen ordenadas. "
              "Eje X → Tipo: **Categórico**; título \"Comidas ordenadas por pedidos\"",
              "Colores de leyenda: A #404040, B #A6A6A6, C #DCDCDC",
              "Línea: interpolación **Lineal** (no suavizada), color #3599B8, 2 px",
              "Eje Y secundario (línea): formato **Porcentaje**, mínimo 0, máximo 1",
-             "Analítica (lupa) → Línea constante en el eje Y secundario: 0,8, discontinua, etiqueta \"80 %\""],
+             "Opcional: si *Analítica* (lupa) ofrece *Línea constante* para este visual, ponla en 0,8 con etiqueta \"80 %\". En algunas versiones los combinados no la tienen: entonces omítela"],
 )
 V["anios"] = dict(
     tipo="Gráfico de líneas",
@@ -249,7 +249,9 @@ V["cuadre"] = dict(
          [("Columnas", "C:mart_kpis[pedidos_totales]", "Suma"),
           ("Columnas", "C:mart_kpis[n_filas]", "Suma"),
           ("Columnas", "C:mart_kpis[precio_promedio_fila]", "Suma")],
-         ["Renombrar: \"Pedidos (SQL)\", \"Filas (SQL)\", \"Precio promedio (SQL)\"", "Totales desactivados"]),
+         ["Renombrar: \"Pedidos (SQL)\", \"Filas (SQL)\", \"Precio promedio (SQL)\"", "Totales desactivados",
+          "En el panel Datos: `pedidos_totales` y `n_filas` → Número entero con separador de miles; "
+          "`precio_promedio_fila` → 2 decimales (mismo formato que las medidas, para comparar a simple vista)"]),
         ("Tabla DAX", "Tabla", 980, 438, 888, 120,
          [("Columnas", "M:Pedidos", ""), ("Columnas", "M:Filas", ""),
           ("Columnas", "M:Precio promedio fila", "")],
@@ -261,3 +263,59 @@ V["cuadre"] = dict(
           "relacionado y sin filtros ocultos.\""]),
     ],
 )
+
+
+# ---------------------------------------------------------------------------
+# Comprobaciones: qué debe verse si el visual está bien armado.
+# Cifras del estudio v3.3.0 y de los marts (datos completos, sin filtros).
+# ---------------------------------------------------------------------------
+COMPRUEBA = {
+    "kpi_pedidos": ["119,56 M (119 557 485)"],
+    "kpi_ingreso": ["≈ 31,9 mil M (11 cifras). Debe ser igual a `ingreso_estimado` de `mart_kpis`"],
+    "kpi_precio": ["≈ 267,01. **No** 332,24: ese es el promedio simple por fila (página 5)"],
+    "kpi_centros": ["77"],
+    "kpi_comidas": ["51"],
+    "tendencia": ["Línea entre ~380 mil y ~1,3 M por semana; el pico (1,30 M) está en la semana 48",
+                  "La media móvil empieza en la semana 4 (las 3 primeras quedan en blanco)",
+                  "Si ves una sola línea plana o un único punto, `semana` no está en *No resumir*"],
+    "categorias": ["14 barras. Beverages arriba con 40,48 M; Biryani abajo con 0,63 M"],
+    "tipos_centro": ["TYPE_B 319 · TYPE_A 262 · TYPE_C 207"],
+    "promocion": ["Sin promoción 211 · Solo email 431 · Solo home 456 · Email + home 816"],
+    "matriz_categorias": ["Beverages: 40 480 525 pedidos, 33,9 %, ranking 1",
+                          "Fila Total: 119 557 485 y 100,0 %; el ranking en blanco"],
+    "pareto": ["51 barras ordenadas de mayor a menor; la línea siempre sube y termina en 1,00 (100 %)",
+               "Con valores de 16 cifras o *E+16*, el mart se cargó desde CSV: cárgalo desde Parquet"],
+    "anios": ["Tres líneas; la del año 3 termina en la semana 41 del año (semana 145)"],
+    "dispersion": ["77 puntos. Si ves 1 a 3 puntos, `center_id` no está en *No resumir*"],
+    "top_centros": ["77 filas; la suma de la participación es 100 %"],
+    "indice_promos": ["Valores mayores que 1 en casi todas las celdas (con promoción se vende más que sin ella)",
+                      "14 filas × 3 columnas (Email + home, Solo email, Solo home)"],
+    "cohortes": ["Primera columna (periodo 0) toda en 100 %",
+                 "Las cohortes de abajo tienen menos columnas: es el control de censura, no un error"],
+    "deciles": ["10 puntos. Si ves 150 puntos, falta el filtro `categoria = Todas`"],
+    "rcs": ["Empieza en +0,04 (precio 125), baja hasta −1,51 (precio 325) y termina en −1,25 (precio 650)"],
+    "elasticidad_cat": ["Arriba Fish −2,49 y Seafood −2,48; abajo Pasta −0,28"],
+    "ctl_pedidos": ["OK"], "ctl_filas": ["OK"],
+    "val_pedidos": ["119 557 485"], "val_precio": ["332,24"],
+    "calidad": ["17 filas, todas en 0; total 0"],
+}
+
+# Ajustes que se repiten en varios visuales y suelen olvidarse
+PREPARACION = [
+    "**Apaga las relaciones automáticas** (una vez): *Archivo → Opciones y configuración → Opciones → "
+    "ARCHIVO ACTUAL → Carga de datos* → desmarca **Detectar automáticamente nuevas relaciones después "
+    "de cargar los datos**. Si no, cada mart que cargues puede quedar unido a una dimensión o a otro "
+    "mart y filtrar mal (por ejemplo, `mart_comidas_abc[meal_id]` con `dim_comida[meal_id]`).",
+    "**Comprueba la vista de modelo**: solo 3 relaciones (`fct_demanda` → `dim_comida`, `dim_centro`, "
+    "`dim_semana`), todas varios a uno y dirección única. Los marts y `_Medidas`, sueltos.",
+    "**Al cargar una tabla nueva, vuelve a aplicar *Resumir por: Ninguno*** en sus columnas de la lista "
+    "de abajo. Cada tabla nueva llega con *Suma* por defecto en las columnas numéricas.",
+    "**Los segmentadores no filtran los marts.** Los marts no tienen relaciones, así que el ABC "
+    "(página 2) y toda la página 3 muestran siempre el total. En la página 2: selecciona un "
+    "segmentador → *Formato → Editar interacciones* → en el visual ABC elige el ícono **Ninguno** "
+    "(círculo tachado). Así nadie espera que cambie.",
+    "**Formato hecho a mano manda sobre el tema.** Si un visual ignora el tema (bordes, etiquetas), "
+    "clic derecho → *Restablecer al valor predeterminado*.",
+    "**Cada visual nuevo, revisa la sección *Comprueba*** antes de pasar al siguiente: si el número "
+    "no coincide, el error está en ese visual y es fácil de encontrar.",
+]

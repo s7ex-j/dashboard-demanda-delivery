@@ -1,0 +1,7009 @@
+cultureInfo es-MX
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "fct_demanda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fct demanda": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fct_demanda": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "fct_demanda.semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.center_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "center_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "center id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "center_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "center": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "center identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "midpoint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "epicenter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "middle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "heart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.meal_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "meal_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "meal id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "meal_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "meal": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "meal identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mealtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lunchtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dinnertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "suppertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teatime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "collation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "pedidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.precio_checkout": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "precio_checkout"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio checkout": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_checkout": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.precio_base": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "precio_base"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio base": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_base": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "precio headquarters": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "precio center": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "precio seat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "precio station": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "precio pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.promo_email": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "promo_email"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promo email": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "promo_email": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "email": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "promo correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "correspondence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "promo message": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "promo communication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "message": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "communication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.destacado_home": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "destacado_home"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "destacado home": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "destacado_home": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.tipo_promocion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "tipo_promocion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo promocion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_promocion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.variacion_precio_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "variacion_precio_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variacion precio pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variacion_precio_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fct_demanda.ingreso_estimado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fct_demanda",
+			          "ConceptualProperty": "ingreso_estimado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso estimado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ingreso_estimado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_comida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_comida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim comida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_comida": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "comida": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "dim_comida.meal_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_comida",
+			          "ConceptualProperty": "meal_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meal id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "meal_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "meal": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "meal identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mealtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lunchtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dinnertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "suppertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teatime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "collation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "dim_comida.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_comida",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categoría": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Categorías": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_comida.cocina": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_comida",
+			          "ConceptualProperty": "cocina"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cocina": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim centro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_centro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro.center_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro",
+			          "ConceptualProperty": "center_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "center id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "center_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "center": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "center identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "center credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "midpoint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "epicenter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "middle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "heart": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "Centro": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro.codigo_ciudad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro",
+			          "ConceptualProperty": "codigo_ciudad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo ciudad": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "codigo_ciudad": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro.codigo_region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro",
+			          "ConceptualProperty": "codigo_region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "codigo_region": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "codigo location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "codigo province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "codigo area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "codigo district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "codigo section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "codigo zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "codigo continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro.tipo_centro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro",
+			          "ConceptualProperty": "tipo_centro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo centro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_centro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Tipo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_centro.area_operativa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_centro",
+			          "ConceptualProperty": "area_operativa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "area operativa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "area_operativa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "region operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "locale operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "locality operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "neighbourhood operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "district operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "continent operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "field operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "neighborhood operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "section operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "space operativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_semana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.anio_relativo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "anio_relativo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anio relativo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "anio_relativo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.semana_del_anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "semana_del_anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "semana del anio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "semana_del_anio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.trimestre_del_anio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "trimestre_del_anio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre del anio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "trimestre_del_anio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.etiqueta_trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "etiqueta_trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "etiqueta trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "etiqueta_trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_semana.bloque_4_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_semana",
+			          "ConceptualProperty": "bloque_4_semanas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "bloque 4 semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bloque_4_semanas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart kpis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart_kpis": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.n_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "n_filas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_filas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fila": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.pedidos_totale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "pedidos_totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos totale": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido totale": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "pedidos_totales": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.ingreso_estimado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "ingreso_estimado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso estimado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ingreso_estimado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.precio_promedio_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "precio_promedio_fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_promedio_fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.precio_promedio_ponderado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "precio_promedio_ponderado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio ponderado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_promedio_ponderado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.n_centro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "n_centros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n centro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_centros": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.n_comida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "n_comidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n comida": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_comidas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "comida": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.n_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "n_semanas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_semanas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_kpis.pedidos_por_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_kpis",
+			          "ConceptualProperty": "pedidos_por_semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos por semana": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido por semana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "pedidos_por_semana": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "calidad_resultado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calidad_resultados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calidad resultado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "calidad_resultados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "calidad_resultado.regla": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calidad_resultados",
+			          "ConceptualProperty": "regla"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "regla": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calidad_resultado.descripcion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calidad_resultados",
+			          "ConceptualProperty": "descripcion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "descripcion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Descripción": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calidad_resultado.filas_con_error": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "calidad_resultados",
+			          "ConceptualProperty": "filas_con_error"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filas con error": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fila con error": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "filas_con_error": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fila con booboo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fila con inaccuracy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fila con miscalculation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fila con slipup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "fila con mistake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fila con fault": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fila con blunder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fila con boo-boo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fila con slip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fila con slip-up": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.pedidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Pedidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Pedidos totales": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Pedidos (DAX)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.filas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Filas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "filas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Filas (DAX)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.precio_promedio_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Precio promedio fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Precio promedio fila (DAX)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.control_pedidos_totales": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Control pedidos totales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "control pedidos totales": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Control: pedidos = 119 557 485": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.control_filas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Control filas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "control filas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Control: filas = 456 548": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ingreso_estimado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ingreso estimado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso estimado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.precio_promedio_ponderado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Precio promedio ponderado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio ponderado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Precio ponderado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.pedidos_por_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Pedidos por fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos por fila": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.centros_activos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Centros activos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "centros activos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Centros": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.comidas_activas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Comidas activas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "comidas activas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Comidas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.media_móvil_4_semanas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Media móvil 4 semanas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "media móvil 4 semanas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.participación_pedidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Participación pedidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participación pedidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Participación": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ranking_categoría": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ranking categoría"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking categoría": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ranking": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ranking_centro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Ranking centro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking centro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Ranking": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart comidas abc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart comida abc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mart_comidas_abc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.meal_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "meal_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meal id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "meal_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "meal": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "meal identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "meal credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mealtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lunchtime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dinnertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "suppertime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "teatime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "collation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.cocina": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "cocina"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cocina": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.pedido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "pedidos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.ingreso_estimado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "ingreso_estimado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ingreso estimado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ingreso_estimado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.precio_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "precio_promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_promedio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.n_centro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "n_centros"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n centro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_centros": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.participacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "participacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.participacion_acumulada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "participacion_acumulada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacion acumulada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "participacion_acumulada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.clase_abc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "clase_abc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "clase abc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "clase_abc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.ranking_global": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "ranking_global"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking global": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ranking_global": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "classification global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "position global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "place global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "grade global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "standing global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "level global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "rank global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.ranking_en_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "ranking_en_categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ranking en categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ranking_en_categoria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.participacion_en_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "participacion_en_categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "participacion en categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "participacion_en_categoria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart promociones indice": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart promocione indice": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mart_promociones_indice": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categoría": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.tipo_promocion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "tipo_promocion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo promocion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_promocion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.n_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "n_filas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_filas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fila": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.pedidos_promedio_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "pedidos_promedio_fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos promedio fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido promedio fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "pedidos_promedio_fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.indice_vs_sin_promo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "indice_vs_sin_promo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indice vs sin promo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indice_vs_sin_promo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "indice vs sin promotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "indice vs sin advertisement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "indice vs sin publicity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "indice vs sin profile-raiser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "indice vs sin photo-shoot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "indice vs sin hook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "indice vs sin prevue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "indice vs sin clip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "indice vs sin preview": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "indice vs sin ad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.indice_mediano_vs_sin_promo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "indice_mediano_vs_sin_promo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "indice mediano vs sin promo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "indice_mediano_vs_sin_promo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "indice mediano vs sin promotion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "indice mediano vs sin advertisement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "indice mediano vs sin publicity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "indice mediano vs sin profile-raiser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "indice mediano vs sin photo-shoot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "indice mediano vs sin hook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "indice mediano vs sin prevue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "indice mediano vs sin clip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "indice mediano vs sin preview": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "indice mediano vs sin ad": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice.variacion_precio_pct_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_promociones_indice",
+			          "ConceptualProperty": "variacion_precio_pct_promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variacion precio pct promedio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variacion_precio_pct_promedio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart cohorte": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart_cohortes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte.cohorte_trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes",
+			          "ConceptualProperty": "cohorte_trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cohorte trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cohorte_trimestre": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Cohorte (trimestre)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte.periodo_desde_inicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes",
+			          "ConceptualProperty": "periodo_desde_inicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "periodo desde inicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "periodo_desde_inicio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte.pares_observable": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes",
+			          "ConceptualProperty": "pares_observables"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pares observable": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pares_observables": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte.pares_activo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes",
+			          "ConceptualProperty": "pares_activos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pares activo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pares_activos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_cohorte.tasa_retencion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_cohortes",
+			          "ConceptualProperty": "tasa_retencion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasa retencion": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tasa_retencion": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart bandas precio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart banda precio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mart_bandas_precio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.decil_precio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "decil_precio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "decil precio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "decil_precio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.n_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "n_filas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "n fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "n_filas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "fila": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.precio_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "precio_min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_min": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "precio minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.precio_max": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "precio_max"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio max": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_max": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "precio maximum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.precio_promedio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "precio_promedio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio promedio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "precio_promedio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.pedidos_promedio_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "pedidos_promedio_fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos promedio fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido promedio fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "pedidos_promedio_fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio.pedidos_mediana_fila": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_bandas_precio",
+			          "ConceptualProperty": "pedidos_mediana_fila"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pedidos mediana fila": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pedido mediana fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "pedidos_mediana_fila": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_rcs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart elasticidad rcs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart_elasticidad_rcs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs.precio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_rcs",
+			          "ConceptualProperty": "precio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "precio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs.elasticidad_rcs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_rcs",
+			          "ConceptualProperty": "elasticidad_rcs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "elasticidad rcs": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "elasticidad_rcs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs.especificacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_rcs",
+			          "ConceptualProperty": "especificacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "especificacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs.notum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_rcs",
+			          "ConceptualProperty": "nota"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "notum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mart elasticidad categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mart_elasticidad_categoria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_categoria",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria.elasticidad": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_categoria",
+			          "ConceptualProperty": "elasticidad"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "elasticidad": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria.especificacion": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_categoria",
+			          "ConceptualProperty": "especificacion"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "especificacion": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria.notum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_elasticidad_categoria",
+			          "ConceptualProperty": "nota"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "notum": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.tasa_de_retención": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Medidas",
+			          "ConceptualProperty": "Tasa de retención"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tasa de retención": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc.acumulado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "mart_comidas_abc",
+			          "ConceptualProperty": "% acumulado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% acumulado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage acumulado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pct acumulado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "fct_demanda_has_dim_centro": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "dim_centro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_dim_centro"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_fct_demandas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_dim_comida": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "dim_comida": {
+			          "Target": {
+			            "Entity": "dim_comida"
+			          },
+			          "Nouns": [
+			            {
+			              "meal": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "dim_comida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_dim_comida"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_comida"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_comida_have_fct_demandas"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_acumulado": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.acumulado": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.acumulado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.acumulado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have__acumulado"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_entity__medida_tasa_de_retención": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "entity__medida.tasa_de_retención": {
+			          "Target": {
+			            "Entity": "entity__medida.tasa_de_retención"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.tasa_de_retención"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_tasa_de_retención"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria_has_notum": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_categoria"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_categoria": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria"
+			          }
+			        },
+			        "mart_elasticidad_categoria.notum": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria.notum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_categoria"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_categoria.notum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_categorias_have_nota"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria_has_especificacion": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_categoria"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_categoria": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria"
+			          }
+			        },
+			        "mart_elasticidad_categoria.especificacion": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria.especificacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_categoria"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_categoria.especificacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_categorias_have_especificacions"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria_has_elasticidad": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_categoria"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_categoria": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria"
+			          }
+			        },
+			        "mart_elasticidad_categoria.elasticidad": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria.elasticidad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_categoria"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_categoria.elasticidad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_categorias_have_elasticidads"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_categoria_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_categoria"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_categoria": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria"
+			          }
+			        },
+			        "mart_elasticidad_categoria.categoria": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_categoria.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_categoria"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_categoria.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_categorias_have_categorias"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs_has_notum": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_rcs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_rcs": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs"
+			          }
+			        },
+			        "mart_elasticidad_rcs.notum": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs.notum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_rcs"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_rcs.notum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_rcs_have_nota"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs_has_especificacion": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_rcs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_rcs": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs"
+			          }
+			        },
+			        "mart_elasticidad_rcs.especificacion": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs.especificacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_rcs"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_rcs.especificacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_rcs_have_especificacions"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs_has_elasticidad_rcs": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_rcs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_rcs": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs"
+			          }
+			        },
+			        "mart_elasticidad_rcs.elasticidad_rcs": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs.elasticidad_rcs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_rcs"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_rcs.elasticidad_rcs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_rcs_have_elasticidad_rcs"
+			        }
+			      ]
+			    },
+			    "mart_elasticidad_rcs_has_precio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_elasticidad_rcs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_elasticidad_rcs": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs"
+			          }
+			        },
+			        "mart_elasticidad_rcs.precio": {
+			          "Target": {
+			            "Entity": "mart_elasticidad_rcs.precio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_elasticidad_rcs"
+			            },
+			            "Object": {
+			              "Role": "mart_elasticidad_rcs.precio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_elasticidad_rcs_have_precios"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_pedidos_mediana_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.pedidos_mediana_fila": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.pedidos_mediana_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.pedidos_mediana_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_pedidos_mediana_fila"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_pedidos_promedio_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.pedidos_promedio_fila": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.pedidos_promedio_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.pedidos_promedio_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_pedidos_promedio_fila"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_precio_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.precio_promedio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.precio_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.precio_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_precio_promedios"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_precio_max": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.precio_max": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.precio_max"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.precio_max"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_precio_maxes"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_precio_min": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.precio_min": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.precio_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.precio_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_precio_mins"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_n_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.n_fila": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.n_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.n_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_n_fila"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_decil_precio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.decil_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.decil_precio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.decil_precio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_decil_precios"
+			        }
+			      ]
+			    },
+			    "mart_bandas_precio_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_bandas_precio"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_bandas_precio": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio"
+			          }
+			        },
+			        "mart_bandas_precio.categoria": {
+			          "Target": {
+			            "Entity": "mart_bandas_precio.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_bandas_precio"
+			            },
+			            "Object": {
+			              "Role": "mart_bandas_precio.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_bandas_precios_have_categorias"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_tasa_retencion": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "mart_cohorte.tasa_retencion": {
+			          "Target": {
+			            "Entity": "mart_cohorte.tasa_retencion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "mart_cohorte.tasa_retencion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_tasa_retencions"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_pares_activo": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "mart_cohorte.pares_activo": {
+			          "Target": {
+			            "Entity": "mart_cohorte.pares_activo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "mart_cohorte.pares_activo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_pares_activo"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_pares_observable": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "mart_cohorte.pares_observable": {
+			          "Target": {
+			            "Entity": "mart_cohorte.pares_observable"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "mart_cohorte.pares_observable"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_pares_observable"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_periodo_desde_inicio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "mart_cohorte.periodo_desde_inicio": {
+			          "Target": {
+			            "Entity": "mart_cohorte.periodo_desde_inicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "mart_cohorte.periodo_desde_inicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_periodo_desde_inicios"
+			        }
+			      ]
+			    },
+			    "mart_cohorte_has_cohorte_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_cohortes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_cohorte": {
+			          "Target": {
+			            "Entity": "mart_cohorte"
+			          }
+			        },
+			        "mart_cohorte.cohorte_trimestre": {
+			          "Target": {
+			            "Entity": "mart_cohorte.cohorte_trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_cohorte"
+			            },
+			            "Object": {
+			              "Role": "mart_cohorte.cohorte_trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_cohortes_have_cohorte_trimestres"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_variacion_precio_pct_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.variacion_precio_pct_promedio": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.variacion_precio_pct_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.variacion_precio_pct_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_variacion_precio_pct_promedios"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_indice_mediano_vs_sin_promo": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.indice_mediano_vs_sin_promo": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.indice_mediano_vs_sin_promo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.indice_mediano_vs_sin_promo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_indice_mediano_vs_sin_promos"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_indice_vs_sin_promo": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.indice_vs_sin_promo": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.indice_vs_sin_promo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.indice_vs_sin_promo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_indice_vs_sin_promos"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_pedidos_promedio_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.pedidos_promedio_fila": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.pedidos_promedio_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.pedidos_promedio_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_pedidos_promedio_fila"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_n_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.n_fila": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.n_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.n_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_n_fila"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_tipo_promocion": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.tipo_promocion": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.tipo_promocion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.tipo_promocion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_tipo_promocions"
+			        }
+			      ]
+			    },
+			    "mart_promociones_indice_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_promociones_indice"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_promociones_indice": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice"
+			          }
+			        },
+			        "mart_promociones_indice.categoria": {
+			          "Target": {
+			            "Entity": "mart_promociones_indice.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_promociones_indice"
+			            },
+			            "Object": {
+			              "Role": "mart_promociones_indice.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_promociones_indices_have_categorias"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_participacion_en_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.participacion_en_categoria": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.participacion_en_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.participacion_en_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_participacion_en_categorias"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_ranking_en_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.ranking_en_categoria": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.ranking_en_categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.ranking_en_categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_ranking_en_categorias"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_ranking_global": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.ranking_global": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.ranking_global"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.ranking_global"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_ranking_global"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_clase_abc": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.clase_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.clase_abc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.clase_abc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_clase_abcs"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_participacion_acumulada": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.participacion_acumulada": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.participacion_acumulada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.participacion_acumulada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_participacion_acumuladas"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_participacion": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.participacion": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.participacion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.participacion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_participacions"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_n_centro": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.n_centro": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.n_centro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.n_centro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_n_centro"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_precio_promedio": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.precio_promedio": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.precio_promedio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.precio_promedio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_precio_promedios"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_ingreso_estimado": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.ingreso_estimado": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.ingreso_estimado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.ingreso_estimado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_ingreso_estimados"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_pedido": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.pedido": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.pedido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.pedido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_pedidos"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_cocina": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.cocina": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.cocina"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.cocina"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_cocinas"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.categoria": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_categorias"
+			        }
+			      ]
+			    },
+			    "mart_comidas_abc_has_meal_id": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_comidas_abc"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_comidas_abc": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc"
+			          }
+			        },
+			        "mart_comidas_abc.meal_id": {
+			          "Target": {
+			            "Entity": "mart_comidas_abc.meal_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_comidas_abc"
+			            },
+			            "Object": {
+			              "Role": "mart_comidas_abc.meal_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_comidas_abcs_have_meal_ids"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_ranking_centro": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.ranking_centro": {
+			          "Target": {
+			            "Entity": "entity__medida.ranking_centro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ranking_centro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_ranking_centro"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_ranking_categoría": {
+			      "Binding": {
+			        "ConceptualEntity": "_Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.ranking_categoría": {
+			          "Target": {
+			            "Entity": "entity__medida.ranking_categoría"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ranking_categoría"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_ranking_categoría"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_participación_pedidos": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.participación_pedidos": {
+			          "Target": {
+			            "Entity": "entity__medida.participación_pedidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.participación_pedidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_participación_pedidos"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_media_móvil_4_semanas": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.media_móvil_4_semanas": {
+			          "Target": {
+			            "Entity": "entity__medida.media_móvil_4_semanas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.media_móvil_4_semanas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_media_móvil_4_semanas"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_entity__medida_media_móvil_4_semanas": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "entity__medida.media_móvil_4_semanas": {
+			          "Target": {
+			            "Entity": "entity__medida.media_móvil_4_semanas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.media_móvil_4_semanas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_media_móvil_4_semanas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_comidas_activas": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.comidas_activas": {
+			          "Target": {
+			            "Entity": "entity__medida.comidas_activas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.comidas_activas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_comidas_activas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_centros_activos": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.centros_activos": {
+			          "Target": {
+			            "Entity": "entity__medida.centros_activos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.centros_activos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_centros_activos"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_pedidos_por_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.pedidos_por_fila": {
+			          "Target": {
+			            "Entity": "entity__medida.pedidos_por_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.pedidos_por_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_pedidos_por_fila"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_precio_promedio_ponderado": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.precio_promedio_ponderado": {
+			          "Target": {
+			            "Entity": "entity__medida.precio_promedio_ponderado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.precio_promedio_ponderado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_precio_promedio_ponderado"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_ingreso_estimado": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.ingreso_estimado": {
+			          "Target": {
+			            "Entity": "entity__medida.ingreso_estimado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ingreso_estimado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_ingreso_estimado"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_control_filas": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.control_filas": {
+			          "Target": {
+			            "Entity": "entity__medida.control_filas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.control_filas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_control_filas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_control_pedidos_totales": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.control_pedidos_totales": {
+			          "Target": {
+			            "Entity": "entity__medida.control_pedidos_totales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.control_pedidos_totales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_control_pedidos_totales"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_precio_promedio_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.precio_promedio_fila": {
+			          "Target": {
+			            "Entity": "entity__medida.precio_promedio_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.precio_promedio_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_precio_promedio_fila"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_filas": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.filas": {
+			          "Target": {
+			            "Entity": "entity__medida.filas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.filas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_filas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_entity__medida_pedidos": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "entity__medida.pedidos": {
+			          "Target": {
+			            "Entity": "entity__medida.pedidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.pedidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_pedidos"
+			        }
+			      ]
+			    },
+			    "calidad_resultado_has_filas_con_error": {
+			      "Binding": {
+			        "ConceptualEntity": "calidad_resultados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calidad_resultado": {
+			          "Target": {
+			            "Entity": "calidad_resultado"
+			          }
+			        },
+			        "calidad_resultado.filas_con_error": {
+			          "Target": {
+			            "Entity": "calidad_resultado.filas_con_error"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calidad_resultado"
+			            },
+			            "Object": {
+			              "Role": "calidad_resultado.filas_con_error"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calidad_resultados_have_filas_con_errors"
+			        }
+			      ]
+			    },
+			    "calidad_resultado_has_descripcion": {
+			      "Binding": {
+			        "ConceptualEntity": "calidad_resultados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calidad_resultado": {
+			          "Target": {
+			            "Entity": "calidad_resultado"
+			          }
+			        },
+			        "calidad_resultado.descripcion": {
+			          "Target": {
+			            "Entity": "calidad_resultado.descripcion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calidad_resultado"
+			            },
+			            "Object": {
+			              "Role": "calidad_resultado.descripcion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calidad_resultados_have_descripcions"
+			        }
+			      ]
+			    },
+			    "calidad_resultado_has_regla": {
+			      "Binding": {
+			        "ConceptualEntity": "calidad_resultados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calidad_resultado": {
+			          "Target": {
+			            "Entity": "calidad_resultado"
+			          }
+			        },
+			        "calidad_resultado.regla": {
+			          "Target": {
+			            "Entity": "calidad_resultado.regla"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calidad_resultado"
+			            },
+			            "Object": {
+			              "Role": "calidad_resultado.regla"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calidad_resultados_have_reglas"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_pedidos_por_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.pedidos_por_semana": {
+			          "Target": {
+			            "Entity": "mart_kpis.pedidos_por_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.pedidos_por_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_pedidos_por_semanas"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_n_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.n_semana": {
+			          "Target": {
+			            "Entity": "mart_kpis.n_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.n_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_n_semanas"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_n_comida": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.n_comida": {
+			          "Target": {
+			            "Entity": "mart_kpis.n_comida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.n_comida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_n_comida"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_n_centro": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.n_centro": {
+			          "Target": {
+			            "Entity": "mart_kpis.n_centro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.n_centro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_n_centro"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_precio_promedio_ponderado": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.precio_promedio_ponderado": {
+			          "Target": {
+			            "Entity": "mart_kpis.precio_promedio_ponderado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.precio_promedio_ponderado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_precio_promedio_ponderados"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_precio_promedio_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.precio_promedio_fila": {
+			          "Target": {
+			            "Entity": "mart_kpis.precio_promedio_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.precio_promedio_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_precio_promedio_fila"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_ingreso_estimado": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.ingreso_estimado": {
+			          "Target": {
+			            "Entity": "mart_kpis.ingreso_estimado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.ingreso_estimado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_ingreso_estimados"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_pedidos_totale": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.pedidos_totale": {
+			          "Target": {
+			            "Entity": "mart_kpis.pedidos_totale"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.pedidos_totale"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_pedidos_totales"
+			        }
+			      ]
+			    },
+			    "mart_kpis_has_n_fila": {
+			      "Binding": {
+			        "ConceptualEntity": "mart_kpis"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_kpis": {
+			          "Target": {
+			            "Entity": "mart_kpis"
+			          }
+			        },
+			        "mart_kpis.n_fila": {
+			          "Target": {
+			            "Entity": "mart_kpis.n_fila"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_kpis"
+			            },
+			            "Object": {
+			              "Role": "mart_kpis.n_fila"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_kpises_have_n_fila"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_bloque_4_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.bloque_4_semana": {
+			          "Target": {
+			            "Entity": "dim_semana.bloque_4_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.bloque_4_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_bloque_4_semanas"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_etiqueta_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.etiqueta_trimestre": {
+			          "Target": {
+			            "Entity": "dim_semana.etiqueta_trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.etiqueta_trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_etiqueta_trimestres"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_trimestre_del_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.trimestre_del_anio": {
+			          "Target": {
+			            "Entity": "dim_semana.trimestre_del_anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.trimestre_del_anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_trimestre_del_anios"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_semana_del_anio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.semana_del_anio": {
+			          "Target": {
+			            "Entity": "dim_semana.semana_del_anio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.semana_del_anio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_semana_del_anios"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_anio_relativo": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.anio_relativo": {
+			          "Target": {
+			            "Entity": "dim_semana.anio_relativo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.anio_relativo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_anio_relativos"
+			        }
+			      ]
+			    },
+			    "dim_semana_has_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_semana"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        },
+			        "dim_semana.semana": {
+			          "Target": {
+			            "Entity": "dim_semana.semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "dim_semana.semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_semanas"
+			        }
+			      ]
+			    },
+			    "dim_centro_has_area_operativa": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_centro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        },
+			        "dim_centro.area_operativa": {
+			          "Target": {
+			            "Entity": "dim_centro.area_operativa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "dim_centro.area_operativa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_area_operativas"
+			        }
+			      ]
+			    },
+			    "dim_centro_has_tipo_centro": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_centro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        },
+			        "dim_centro.tipo_centro": {
+			          "Target": {
+			            "Entity": "dim_centro.tipo_centro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "dim_centro.tipo_centro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_tipo_centro"
+			        }
+			      ]
+			    },
+			    "dim_centro_has_codigo_region": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_centro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        },
+			        "dim_centro.codigo_region": {
+			          "Target": {
+			            "Entity": "dim_centro.codigo_region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "dim_centro.codigo_region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_codigo_regions"
+			        }
+			      ]
+			    },
+			    "dim_centro_has_codigo_ciudad": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_centro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        },
+			        "dim_centro.codigo_ciudad": {
+			          "Target": {
+			            "Entity": "dim_centro.codigo_ciudad"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "dim_centro.codigo_ciudad"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_codigo_ciudad"
+			        }
+			      ]
+			    },
+			    "dim_centro_has_center_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_centro"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_centro": {
+			          "Target": {
+			            "Entity": "dim_centro"
+			          }
+			        },
+			        "dim_centro.center_id": {
+			          "Target": {
+			            "Entity": "dim_centro.center_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_centro"
+			            },
+			            "Object": {
+			              "Role": "dim_centro.center_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_centro_have_center_ids"
+			        }
+			      ]
+			    },
+			    "dim_comida_has_cocina": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_comida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_comida": {
+			          "Target": {
+			            "Entity": "dim_comida"
+			          }
+			        },
+			        "dim_comida.cocina": {
+			          "Target": {
+			            "Entity": "dim_comida.cocina"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_comida"
+			            },
+			            "Object": {
+			              "Role": "dim_comida.cocina"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_comida_have_cocinas"
+			        }
+			      ]
+			    },
+			    "dim_comida_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_comida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_comida": {
+			          "Target": {
+			            "Entity": "dim_comida"
+			          }
+			        },
+			        "dim_comida.categoria": {
+			          "Target": {
+			            "Entity": "dim_comida.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_comida"
+			            },
+			            "Object": {
+			              "Role": "dim_comida.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_comida_have_categorias"
+			        }
+			      ]
+			    },
+			    "dim_comida_has_meal_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_comida"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_comida": {
+			          "Target": {
+			            "Entity": "dim_comida"
+			          }
+			        },
+			        "dim_comida.meal_id": {
+			          "Target": {
+			            "Entity": "dim_comida.meal_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_comida"
+			            },
+			            "Object": {
+			              "Role": "dim_comida.meal_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_comida_have_meal_ids"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_ingreso_estimado": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.ingreso_estimado": {
+			          "Target": {
+			            "Entity": "fct_demanda.ingreso_estimado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.ingreso_estimado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_ingreso_estimados"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_variacion_precio_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.variacion_precio_pct": {
+			          "Target": {
+			            "Entity": "fct_demanda.variacion_precio_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.variacion_precio_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_variacion_precio_pcts"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_tipo_promocion": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.tipo_promocion": {
+			          "Target": {
+			            "Entity": "fct_demanda.tipo_promocion"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.tipo_promocion"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_tipo_promocions"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_destacado_home": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.destacado_home": {
+			          "Target": {
+			            "Entity": "fct_demanda.destacado_home"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.destacado_home"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_destacado_homes"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_promo_email": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.promo_email": {
+			          "Target": {
+			            "Entity": "fct_demanda.promo_email"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.promo_email"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_promo_emails"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_precio_base": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.precio_base": {
+			          "Target": {
+			            "Entity": "fct_demanda.precio_base"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.precio_base"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_precio_bases"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_precio_checkout": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.precio_checkout": {
+			          "Target": {
+			            "Entity": "fct_demanda.precio_checkout"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.precio_checkout"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_precio_checkouts"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_pedido": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.pedido": {
+			          "Target": {
+			            "Entity": "fct_demanda.pedido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.pedido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_pedidos1"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "fct_demanda.id": {
+			          "Target": {
+			            "Entity": "fct_demanda.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Name": {
+			              "Role": "fct_demanda.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_fct_demandas"
+			        }
+			      ]
+			    },
+			    "fct_demanda_has_dim_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "fct_demanda"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fct_demanda": {
+			          "Target": {
+			            "Entity": "fct_demanda"
+			          }
+			        },
+			        "dim_semana": {
+			          "Target": {
+			            "Entity": "dim_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fct_demanda"
+			            },
+			            "Object": {
+			              "Role": "dim_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fct_demandas_have_dim_semanas"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_semana"
+			            },
+			            "Object": {
+			              "Role": "fct_demanda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_semanas_have_fct_demandas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

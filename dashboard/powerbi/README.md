@@ -149,15 +149,11 @@ Si algo no coincide, casi siempre es una relación en dirección doble o un segm
 
 ## 7. Entregables en el repositorio
 
-- `dashboard_demanda.pbix` en esta carpeta (pesa poco: el modelo agregado por Parquet comprime
-  bien; si supera los 50 MB, guardarlo como proyecto `.pbip` en lugar del `.pbix`).
-- Capturas en `docs/capturas/` (PNG, 1600 px de ancho): una por página, con nombre
-  `powerbi_01_resumen.png`, `powerbi_02_categorias.png`, etc.
-
-> **Datos dentro del `.pbix`.** El archivo guarda una copia de los datos importados, también
-> las filas de `fct_demanda`. Antes de subirlo, revisa que la licencia del dataset en Kaggle
-> lo permita. Si hay duda, sube solo las capturas y el `.pbip` sin la caché de datos
-> (`.gitignore` ya excluye `cache.abf`).
+- Proyecto **PBIP**: `dashboard_demanda.pbip` en esta carpeta (contiene `SemanticModel/` y
+  `Report/`; la caché local `.pbi/` está en `.gitignore`).
+- Capturas en `docs/capturas/` (JPG, 1600 px de ancho): una por página, con nombre
+  `powerbi_01_describir.jpg`, `powerbi_02_comparar.jpg`, `powerbi_03_diagnosticar.jpg`,
+  `powerbi_04_hallazgos.jpg`, `powerbi_05_validacion.jpg`.
 
 **Publicar en la web.** *Publicar en la web* de Power BI Service necesita una cuenta profesional
 o educativa con licencia y que la organización lo permita. Si tu correo de UPN o ISIL tiene

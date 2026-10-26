@@ -1,0 +1,40 @@
+table calidad_resultados
+	lineageTag: 2625e9ef-b92f-4a65-86a2-3690730d202e
+
+	column regla
+		dataType: string
+		lineageTag: 12b32351-d997-4ef7-a538-a67b336c2ffa
+		summarizeBy: none
+		sourceColumn: regla
+
+		annotation SummarizationSetBy = Automatic
+
+	column descripcion
+		dataType: string
+		lineageTag: 69a0b4f6-46aa-420c-8a28-810316f0c6de
+		summarizeBy: none
+		sourceColumn: descripcion
+
+		annotation SummarizationSetBy = Automatic
+
+	column filas_con_error
+		dataType: int64
+		formatString: 0
+		lineageTag: c733ba94-2469-4649-9e0c-e96c90193cc3
+		summarizeBy: sum
+		sourceColumn: filas_con_error
+
+		annotation SummarizationSetBy = Automatic
+
+	partition calidad_resultados = m
+		mode: import
+		source =
+				let
+				  Origen = Csv.Document(File.Contents("C:\Users\LENOVO\Documentos\PROYECTOS\dashboard-demanda-delivery\exportes\marts\calidad_resultados.csv"), [Delimiter = ",", Columns = 3, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Encabezados promovidos" = Table.PromoteHeaders(Origen, [PromoteAllScalars = true]),
+				  #"Tipo de columna cambiado" = Table.TransformColumnTypes(#"Encabezados promovidos", {{"regla", type text}, {"descripcion", type text}, {"filas_con_error", Int64.Type}}, "es")
+				in
+				  #"Tipo de columna cambiado"
+
+	annotation PBI_ResultType = Table
+

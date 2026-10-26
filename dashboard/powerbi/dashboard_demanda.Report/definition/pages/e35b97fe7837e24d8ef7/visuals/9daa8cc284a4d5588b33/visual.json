@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "9daa8cc284a4d5588b33",
+  "position": {
+    "x": 980,
+    "y": 574,
+    "z": 7,
+    "height": 120,
+    "width": 888,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Arriba, el total calculado en DuckDB (mart_kpis). Abajo, el mismo total con medidas DAX sobre el modelo estrella. Si coinciden, el modelo de Power BI está bien relacionado y sin filtros ocultos.",
+                    "textStyle": {
+                      "fontSize": "18pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
