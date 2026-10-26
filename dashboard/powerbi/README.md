@@ -5,6 +5,12 @@ de [`medidas.dax`](medidas.dax). Los marts del SQL sirven aquí para dos cosas: 
 páginas cuya lógica conviene dejar en SQL (ABC, cohortes, deciles, elasticidad) y **validar** que
 las medidas DAX dan lo mismo que el SQL.
 
+> **Rutas de los datos.** El modelo guarda rutas absolutas a `exportes/estrella/` y
+> `exportes/marts_parquet/` (y, para `mart_kpis` y `calidad_resultados`, a `exportes/marts/`).
+> Tras clonar el repositorio y correr `python -m pipeline.build`, cámbialas en *Transformar
+> datos → Configuración de origen de datos → Cambiar origen*. Mejora pendiente: un parámetro
+> `CarpetaExportes` en Power Query para cambiarlas en un solo lugar.
+
 Se construye en Power BI Desktop (Windows, gratis). El archivo `.pbix` se guarda en esta carpeta.
 
 ## 1. Preparar los datos

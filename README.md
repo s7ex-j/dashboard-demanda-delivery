@@ -71,16 +71,34 @@ El detalle de cada una (técnica y qué no se puede concluir) está en
 
 ## Dashboards
 
-- **Power BI:** proyecto **PBIP** en [`dashboard/powerbi/`](dashboard/powerbi/) (se abre con
-  `dashboard_demanda.pbip` tras correr `python -m pipeline.build`). Guía, medidas DAX y tema en
-  la misma carpeta.
-  - [Informe completo (PDF)](docs/dashboard_demanda.pdf)
-  - **1. Describir** — Resumen ejecutivo: KPIs, tendencia, categorías, segmentadores
-  - **2. Comparar** — Categorías y promociones: matriz, Pareto ABC, índice controlado
-  - **3. Diagnosticar** — Tendencia semanal, cohortes, deciles de precio, elasticidad
-  - **4. Hallazgos** — Centros: ranking, dispersión área operativa, tipos de centro
-  - **5. Validación** — Controles de totales, 17 reglas de calidad, conciliación KPIs
-- **Looker Studio:** *en construcción.* Guía en [`dashboard/looker/`](dashboard/looker/).
+### Power BI
+
+Proyecto **PBIP** en [`dashboard/powerbi/`](dashboard/powerbi/): modelo estrella, medidas DAX
+([`medidas.dax`](dashboard/powerbi/medidas.dax)) y cinco páginas. También en
+[PDF](docs/dashboard_demanda.pdf).
+
+**1. Describir:** KPIs, pedidos por semana con media móvil, categorías, tipos de centro y promociones.
+![Describir](docs/capturas/powerbi_01_describir.jpg)
+
+**2. Comparar:** participación por categoría, clasificación ABC de comidas, años relativos y ranking de centros.
+![Comparar](docs/capturas/powerbi_02_comparar.jpg)
+
+**3. Diagnosticar:** índice de promociones controlado por centro y comida, permanencia por cohortes, deciles de precio y elasticidades del estudio (descriptivas).
+![Diagnosticar](docs/capturas/powerbi_03_diagnosticar.jpg)
+
+**4. Hallazgos y límites:** qué muestran los datos, qué no se puede concluir y cómo se construyó.
+![Hallazgos y límites](docs/capturas/powerbi_04_hallazgos.jpg)
+
+**5. Validación:** controles de totales, las 17 reglas de calidad y el mismo total calculado en SQL y en DAX.
+![Validación](docs/capturas/powerbi_05_validacion.jpg)
+
+> **Para abrirlo en otro equipo:** corre `python -m pipeline.build` y, en Power BI Desktop,
+> actualiza la ruta de los orígenes de datos (*Transformar datos → Configuración de origen de
+> datos → Cambiar origen*). El modelo apunta a la carpeta `exportes/` de la máquina donde se creó.
+
+### Looker Studio
+
+*En construcción.* Guía en [`dashboard/looker/`](dashboard/looker/).
 
 ## Cómo reproducirlo
 
