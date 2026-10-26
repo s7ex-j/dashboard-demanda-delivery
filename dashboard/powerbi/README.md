@@ -11,7 +11,7 @@ las medidas DAX dan lo mismo que el SQL.
 > datos → Configuración de origen de datos → Cambiar origen*. Mejora pendiente: un parámetro
 > `CarpetaExportes` en Power Query para cambiarlas en un solo lugar.
 
-Se construye en Power BI Desktop (Windows, gratis). El archivo `.pbix` se guarda en esta carpeta.
+Se construye en Power BI Desktop (Windows, gratis). El informe se guarda en esta carpeta como proyecto PBIP (`dashboard_demanda.pbip`).
 
 ## 1. Preparar los datos
 
