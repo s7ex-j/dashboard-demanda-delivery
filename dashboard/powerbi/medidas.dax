@@ -1,10 +1,8 @@
 // =============================================================================
-// Medidas DAX del dashboard (tabla de medidas: _Medidas)
+// Medidas DAX del informe (tabla _Medidas del modelo semántico)
 // Modelo: fct_demanda (hechos) -> dim_comida, dim_centro, dim_semana
-// Explicación de cada medida y cómo validarla: dashboard/powerbi/README.md
+// Copia legible de dashboard_demanda.SemanticModel/definition/tables/_Medidas.tmdl
 // =============================================================================
-
-// ---- Básicas ----------------------------------------------------------------
 
 Pedidos =
 SUM ( fct_demanda[pedidos] )
@@ -12,17 +10,23 @@ SUM ( fct_demanda[pedidos] )
 Filas =
 COUNTROWS ( fct_demanda )
 
-Ingreso estimado =
-SUM ( fct_demanda[ingreso_estimado] )
-
-Pedidos por fila =
-DIVIDE ( [Pedidos], [Filas] )
-
 Precio promedio fila =
 AVERAGE ( fct_demanda[precio_checkout] )
 
+Control pedidos totales =
+IF ( CALCULATE ( [Pedidos], REMOVEFILTERS () ) = 119557485, "OK", "Revisar" )
+
+Control filas =
+IF ( CALCULATE ( [Filas], REMOVEFILTERS () ) = 456548, "OK", "Revisar" )
+
+Ingreso estimado =
+SUM ( fct_demanda[ingreso_estimado] )
+
 Precio promedio ponderado =
 DIVIDE ( [Ingreso estimado], [Pedidos] )
+
+Pedidos por fila =
+DIVIDE ( [Pedidos], [Filas] )
 
 Centros activos =
 DISTINCTCOUNT ( fct_demanda[center_id] )
@@ -30,46 +34,6 @@ DISTINCTCOUNT ( fct_demanda[center_id] )
 Comidas activas =
 DISTINCTCOUNT ( fct_demanda[meal_id] )
 
-// ---- Participación y rankings -----------------------------------------------
-
-// Parte de los pedidos visibles que aporta el elemento actual.
-// ALLSELECTED respeta los filtros de la página: con un filtro por tipo de
-// centro, la participación se calcula dentro de ese tipo.
-Participación pedidos =
-DIVIDE (
-    [Pedidos],
-    CALCULATE ( [Pedidos], ALLSELECTED ( dim_comida ), ALLSELECTED ( dim_centro ) )
-)
-
-Ranking categoría =
-IF (
-    HASONEVALUE ( dim_comida[categoria] ),
-    RANKX ( ALLSELECTED ( dim_comida[categoria] ), [Pedidos], , DESC, DENSE )
-)
-
-Ranking centro =
-IF (
-    HASONEVALUE ( dim_centro[center_id] ),
-    RANKX ( ALLSELECTED ( dim_centro[center_id] ), [Pedidos], , DESC, SKIP )
-)
-
-// ---- Tiempo (semanas relativas, sin fechas de calendario) --------------------
-// El dataset no tiene fechas, así que no sirven las funciones de inteligencia
-// de tiempo (SAMEPERIODLASTYEAR, etc.). Se desplaza la semana a mano.
-
-Pedidos semana anterior =
-VAR s = SELECTEDVALUE ( dim_semana[semana] )
-RETURN
-    IF (
-        NOT ISBLANK ( s ),
-        CALCULATE ( [Pedidos], REMOVEFILTERS ( dim_semana ), dim_semana[semana] = s - 1 )
-    )
-
-Var semanal % =
-DIVIDE ( [Pedidos] - [Pedidos semana anterior], [Pedidos semana anterior] )
-
-// Promedio de las últimas 4 semanas; queda en blanco si no hay 4 semanas con
-// datos (igual que media_movil_4s en el SQL).
 Media móvil 4 semanas =
 VAR s = SELECTEDVALUE ( dim_semana[semana] )
 VAR ventana =
@@ -87,58 +51,20 @@ RETURN
         CALCULATE ( [Pedidos], REMOVEFILTERS ( dim_semana ), ventana ) / 4
     )
 
-Pedidos hace 52 semanas =
-VAR s = SELECTEDVALUE ( dim_semana[semana] )
-RETURN
-    IF (
-        NOT ISBLANK ( s ),
-        CALCULATE ( [Pedidos], REMOVEFILTERS ( dim_semana ), dim_semana[semana] = s - 52 )
-    )
-
-Var interanual % =
-DIVIDE ( [Pedidos] - [Pedidos hace 52 semanas], [Pedidos hace 52 semanas] )
-
-// Acumulado dentro del año relativo (se reinicia en la semana 53 y en la 105).
-Pedidos acumulados año =
-VAR s = SELECTEDVALUE ( dim_semana[semana] )
-VAR a = SELECTEDVALUE ( dim_semana[anio_relativo] )
-RETURN
-    IF (
-        NOT ISBLANK ( s ),
-        CALCULATE (
-            [Pedidos],
-            REMOVEFILTERS ( dim_semana ),
-            dim_semana[anio_relativo] = a,
-            dim_semana[semana] <= s
-        )
-    )
-
-// ---- Promociones ---------------------------------------------------------------
-
-Pedidos por fila sin promo =
-CALCULATE ( [Pedidos por fila], fct_demanda[tipo_promocion] = "Sin promoción" )
-
-Pedidos por fila con promo =
-CALCULATE ( [Pedidos por fila], fct_demanda[tipo_promocion] <> "Sin promoción" )
-
-// Cuántas veces más pedidos tiene una fila con promoción que una sin ella.
-// Comparación cruda: no controla centro ni comida. La versión controlada por
-// par centro × comida está en mart_promociones_indice (SQL).
-Ratio promo vs sin promo =
-DIVIDE ( [Pedidos por fila con promo], [Pedidos por fila sin promo] )
-
-% pedidos con promoción =
+Participación pedidos =
 DIVIDE (
-    CALCULATE ( [Pedidos], fct_demanda[tipo_promocion] <> "Sin promoción" ),
-    [Pedidos]
+    [Pedidos],
+    CALCULATE ( [Pedidos], ALLSELECTED ( dim_comida ), ALLSELECTED ( dim_centro ) )
 )
 
-// ---- Control (página de validación) -------------------------------------------
-// Estos valores vienen del estudio v3.3.0. Si alguna tarjeta muestra "Revisar",
-// el modelo cargado no es el mismo dataset o falta un filtro por quitar.
+Ranking categoría =
+IF (
+    HASONEVALUE ( dim_comida[categoria] ),
+    RANKX ( ALLSELECTED ( dim_comida[categoria] ), [Pedidos], , DESC, DENSE )
+)
 
-Control pedidos totales =
-IF ( CALCULATE ( [Pedidos], REMOVEFILTERS () ) = 119557485, "OK", "Revisar" )
+Ranking centro =
+IF ( HASONEVALUE ( dim_centro[center_id] ), RANKX ( ALLSELECTED ( dim_centro ), [Pedidos], , DESC, SKIP ) )
 
-Control filas =
-IF ( CALCULATE ( [Filas], REMOVEFILTERS () ) = 456548, "OK", "Revisar" )
+Tasa de retención =
+DIVIDE ( SUM ( mart_cohortes[pares_activos] ), SUM ( mart_cohortes[pares_observables] ) )

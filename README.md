@@ -98,7 +98,7 @@ Proyecto **PBIP** en [`dashboard/powerbi/`](dashboard/powerbi/): modelo estrella
 
 ### Looker Studio
 
-*En construcción.* Guía en [`dashboard/looker/`](dashboard/looker/).
+*En construcción.* Fuentes de datos en [`dashboard/looker/`](dashboard/looker/).
 
 ## Cómo reproducirlo
 
