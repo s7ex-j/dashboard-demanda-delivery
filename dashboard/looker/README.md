@@ -1,6 +1,8 @@
 # Dashboard en Looker Studio
 
-Versión pública del dashboard (enlace: *pendiente*). Usa solo las tablas agregadas de
+Versión pública del dashboard:
+**[abrir en Looker Studio](https://lookerstudio.google.com/reporting/26c68f6d-8127-45d0-81d8-99ef04342e32)**
+(vista previa en [PDF](../../docs/looker_demanda.pdf)). Usa solo las tablas agregadas de
 [`datos/`](datos/); ninguna fila del dataset original sale del equipo.
 
 | Fuente | Contenido |
