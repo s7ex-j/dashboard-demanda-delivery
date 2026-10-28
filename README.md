@@ -98,7 +98,25 @@ Proyecto **PBIP** en [`dashboard/powerbi/`](dashboard/powerbi/): modelo estrella
 
 ### Looker Studio
 
-*En construcción.* Fuentes de datos en [`dashboard/looker/`](dashboard/looker/).
+Versión pública, sin instalar nada:
+**[abrir el informe en Looker Studio](https://lookerstudio.google.com/reporting/26c68f6d-8127-45d0-81d8-99ef04342e32)**.
+También en [PDF](docs/looker_demanda.pdf). Usa solo tablas agregadas
+([`dashboard/looker/datos/`](dashboard/looker/datos/)), no el detalle de Kaggle.
+
+**1. Describir:** KPIs, pedidos por semana con media móvil, categorías, tipos de centro y promociones.
+![Describir](docs/capturas/looker_01_describir.jpg)
+
+**2. Comparar:** participación por categoría, clasificación ABC de comidas, semanas por año relativo, área operativa frente a pedidos y ranking de centros.
+![Comparar](docs/capturas/looker_02_comparar.jpg)
+
+**3. Diagnosticar:** índice de promociones controlado por centro y comida, permanencia por cohortes, deciles de precio y elasticidades del estudio (descriptivas).
+![Diagnosticar](docs/capturas/looker_03_diagnosticar.jpg)
+
+**4. Hallazgos y límites:** qué muestran los datos, qué no se puede concluir y cómo se construyó.
+![Hallazgos y límites](docs/capturas/looker_04_hallazgos.jpg)
+
+**5. Validación:** totales, las 17 reglas de calidad y el cuadre con el estudio v3.3.0.
+![Validación](docs/capturas/looker_05_validacion.jpg)
 
 ## Cómo reproducirlo
 
