@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "Si usas este trabajo, cítalo con los datos de abajo."
+type: software
+title: "Dashboard de demanda en delivery: SQL (DuckDB), Power BI y Looker Studio"
+version: "1.0.0"
+date-released: "2026-10-28"
+authors:
+  - family-names: "Vilca Ramos"
+    given-names: "Jharol André"
+    orcid: "https://orcid.org/0009-0009-7897-3439"
+url: "https://github.com/s7ex-j/dashboard-demanda-delivery"
+repository-code: "https://github.com/s7ex-j/dashboard-demanda-delivery"
+license: MIT
+keywords:
+  - "inteligencia de negocios"
+  - "SQL"
+  - "DuckDB"
+  - "modelado dimensional"
+  - "Power BI"
+  - "Looker Studio"
+  - "calidad de datos"
+  - "food delivery"
+abstract: >-
+  Capa de datos y dashboards sobre el conjunto público Food Demand Forecasting (Genpact/Kaggle):
+  456 548 registros semana × centro × comida, 145 semanas, 77 centros y 51 comidas. Incluye un
+  esquema estrella en DuckDB, 10 consultas de negocio con CTE y funciones de ventana (análisis ABC,
+  cohortes con control de censura, índices de promoción y deciles de precio), 17 reglas de calidad
+  que detienen el pipeline si fallan, y tests que recalculan cada consulta en pandas y concilian
+  los resultados con el estudio de elasticidad v3.3.0. Los resultados se presentan en un informe de
+  Power BI (proyecto PBIP con medidas DAX) y en una versión pública en Looker Studio. Segunda parte
+  del estudio de elasticidad precio-demanda (DOI 10.5281/zenodo.23586040); no vuelve a estimar
+  modelos.
+references:
+  - type: report
+    title: "Elasticidad precio-demanda en el servicio de delivery de comidas: evidencia desde datos transaccionales"
+    authors:
+      - family-names: "Vilca Ramos"
+        given-names: "Jharol André"
+        orcid: "https://orcid.org/0009-0009-7897-3439"
+    year: 2026
+    doi: "10.5281/zenodo.23586040"
+    url: "https://doi.org/10.5281/zenodo.23586040"
