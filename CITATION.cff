@@ -3,6 +3,7 @@ message: "Si usas este trabajo, cítalo con los datos de abajo."
 type: software
 title: "Dashboard de demanda en delivery: SQL (DuckDB), Power BI y Looker Studio"
 version: "1.0.0"
+doi: "10.5281/zenodo.23753183"
 date-released: "2026-10-28"
 authors:
   - family-names: "Vilca Ramos"
@@ -11,6 +12,13 @@ authors:
 url: "https://github.com/s7ex-j/dashboard-demanda-delivery"
 repository-code: "https://github.com/s7ex-j/dashboard-demanda-delivery"
 license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23753183"
+    description: "DOI concepto (todas las versiones)"
+  - type: doi
+    value: "10.5281/zenodo.23753184"
+    description: "Versión 1.0.0"
 keywords:
   - "inteligencia de negocios"
   - "SQL"

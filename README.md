@@ -2,6 +2,7 @@
 
 [![tests](https://github.com/s7ex-j/dashboard-demanda-delivery/actions/workflows/ci.yml/badge.svg)](https://github.com/s7ex-j/dashboard-demanda-delivery/actions/workflows/ci.yml)
 [![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23753183.svg)](https://doi.org/10.5281/zenodo.23753183)
 
 Capa de datos y dashboard para el dataset público *Food Demand Forecasting* (Genpact / Analytics
 Vidhya, Kaggle): **456 548 registros** semana × centro × comida, 145 semanas, 77 centros y 51
@@ -177,6 +178,15 @@ así que el dashboard no da recomendaciones de precio
 Usé Claude (Anthropic) como asistente para redactar SQL, tests y documentación. Revisé el
 código, ejecuté los tests y comprobé los resultados contra el estudio publicado. Las decisiones
 de diseño y de alcance, y los errores que queden, son míos.
+
+## Cómo citar
+
+Vilca Ramos, J. A. (2026). *Dashboard de demanda en delivery: SQL (DuckDB), Power BI y Looker
+Studio* (v1.0.0) [Software]. Zenodo. <https://doi.org/10.5281/zenodo.23753183>
+
+El DOI apunta siempre a la última versión; la v1.0.0 tiene su propio DOI,
+[10.5281/zenodo.23753184](https://doi.org/10.5281/zenodo.23753184). Los metadatos están en
+[`CITATION.cff`](CITATION.cff) (GitHub muestra el botón *Cite this repository*).
 
 ## Autor
 
